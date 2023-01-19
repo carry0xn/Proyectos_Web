@@ -1,0 +1,10 @@
+#introduccion{
+    background-color: var(--color3);
+    width: 100%;
+}
+
+#introduccion > div{
+    display: block;
+    text-align:left;
+
+}
