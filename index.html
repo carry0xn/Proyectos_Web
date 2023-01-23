@@ -6,28 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/4b36ac4034.js" crossorigin="anonymous"></script>
+    
     <title>Mi CV</title>
-    <link rel="icon" type="image/x-icon" href="/assets/img/2023-01-16-141818-Dibujo 3.png">
+    <link rel="icon" type="image/x-icon" href="./assets/img/2023-01-16-141818-Dibujo 3.png">
 </head>
 <body>
     <header>
         <nav>
-            <div class="navbar">
-                <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-                <a href="yo.html"><i class="fa fa-fw fa-user"></i> Sobre Mi </a>
-                <a href="mis_proyectos.html"><i class="fa fa-fw fa-code"></i> Mis Proyectos </a>
+            <div class="navbar"> 
+                <a href="yo.html"> <i class="fa fa-fw fa-user"></i> Sobre Mi </a>
+                <a href="mis_proyectos.html"> <i class="fa fa-fw fa-code"></i> Mis Proyectos </a>
+                <a href="index.html"> <i class="fa fa-fw fa-home"></i> Home </a> 
             </div>
         </nav>
     </header>
-    <main>
 
-        <section id="introduccion"> 
-            <div> 
-                <h3> ho</h3>
+    <main>
+        
+        <div class="cover">
+            
+            <div class="text__information-cover">
+                <h1>Bienvenidos</h1>
+
+                <p> Soy Carolina Rodriguez Medina. Soy una estudiante de la carrera Tecnicatura en Programacion.
+                    Tengo 21 años, me apasiona mucho la programación y estoy siempre dispuesta a aprender algo nuevo.</p>
+
+                <button class="inicio_button"><a href="yo.html">Mas Sobre Mi</a></button>
+
             </div>
-        </section>
+
+            <div class="media__cover">
+                <img src="./assets/img/gifprueba.gif" alt="Foto Relleno">
+            </div>
+            
+        </div>
+
+        <div class="inicio_portfolio">
+            <h2> Lenguajes de la programación que manejo </h2>
+            <div>
+                <img src="./assets/img/python.jpeg" alt="imagen" class="inicio_image">
+                <h3>Python</h3>
+            </div>
+            <div>
+                <img src="./assets/img/js.png" alt="imagen" class="inicio_image">
+                <h3>JavaScript</h3>
+            </div>
+            <div>
+                <img src="./assets/img/sql.png" alt="imagen" class="inicio_image">
+                <h3>SQL</h3>
+            </div>
+            <button class="inicio_button"><a href="mis_proyectos.html">Ver Proyectos</a></button> 
+        </div>
+        
 
     </main>
+    <footer>
+        <div>
+            <p>Contacto</p>
+            <a href="mailto:rodriguezc.medina@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://wa.me/1169512534?text=Queria%20realizar%20la%20siguiente%20consulta%20"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div>
+            <a href="yo.html"> <i class="fa fa-fw fa-user"></i> Sobre Mi </a>
+            <a href="mis_proyectos.html"> <i class="fa fa-fw fa-code"></i> Mis Proyectos </a>
+            <a href="index.html"> <i class="fa fa-fw fa-home"></i> Home </a> 
+        </div>
+    </footer>
 
 
 </body>

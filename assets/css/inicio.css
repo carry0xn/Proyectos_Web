@@ -1,10 +1,110 @@
-#introduccion{
-    background-color: var(--color3);
-    width: 100%;
+main{
+    background: #F5F5F5;
+    
 }
 
-#introduccion > div{
-    display: block;
-    text-align:left;
+.btn__register-cover{
+    padding: 14px 50px;
+    border: none;
+    background: #000;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background, color, 300ms;
+}
+
+.cover{
+    margin: 1cm;
+    padding: 1cm;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.text__information-cover{
+    width: 50%;
+}
+
+.text__information-cover h1{
+    font-size: 50px;
+}
+
+.text__information-cover p{
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.inicio_button{
+    padding: 1rem 1.8rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: transparent;
+    color: black;
+    border-radius: 2rem;
+    margin: 1rem auto;
+    border: solid black 1.5px;
+}
+.inicio_button:hover{
+    transform: translateY(-0.4rem);
+    transition: .5s;
+    box-shadow: 0px .3rem black;
+}
+.inicio_button{
+    box-shadow: none;
+    transform: translateY(0.4rem);
+    transition: .5s;
+}
+
+.inicio_button > a{
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+}
+
+.media__cover{
+    margin-top: 1cm;
+    width: 50%;
+}
+
+.media__cover img{
+    float: right;
+    width: 80%;
+    margin-top: -40px;
+}
+
+.inicio_portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2% 5%;
+}
+
+.inicio_portfolio{
+    justify-content: center;
+}
+.inicio_portfolio > h2{
+    margin-bottom: 1cm;
+    flex: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.inicio_portfolio > div{
+    flex: 33%;
+    text-align: center;
+}
+.inicio_portfolio > div > img {
+    width: 60%;
+    height: 80%;
+    max-width: 400px;
+}
+.inicio_portfolio > div > h3{
+    font-size: 1.8rem;
+    margin-bottom: 1cm;
+}
+
+.inicio_image{
+    height: 20%;
+    max-width: 300px;
 
 }
