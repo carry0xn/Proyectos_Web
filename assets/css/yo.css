@@ -1,0 +1,55 @@
+.yo{
+    display: flex;
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home_banner_area{
+    float: left;
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+}
+
+.banner_content{
+    margin: 1cm;
+    padding: 1cm;
+    border-radius: 2rem;
+    margin: 1rem;
+    border: solid black 1.5px;
+    hyphens:auto;
+}
+
+.banner_content .media img {
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    border: solid black 1.5px;
+    margin-left: 1cm;
+}
+
+.banner_content a{
+    text-decoration: none;
+    color: black;
+}
+
+.estudios{
+    width: 100%;
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+    margin-left: 2cm;
+
+}
+.estudios h1{
+    font-weight: bold;
+
+}
+.iconos_estudios li::marker{
+    font-size: 1.5rem;
+    color: orange;
+}
+.iconos_estudios li{
+    margin-top: 0.5cm;
+    font-weight: bold;
+}

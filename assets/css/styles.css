@@ -1,6 +1,8 @@
 @import './header.css';
 @import './inicio.css';
 @import './footer.css';
+@import './mis_proyectos.css';
+@import './yo.css';
 
 /*estilos generales y variables*/
 :root{

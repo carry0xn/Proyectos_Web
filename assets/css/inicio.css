@@ -1,18 +1,7 @@
 main{
     background: #F5F5F5;
-    
 }
 
-.btn__register-cover{
-    padding: 14px 50px;
-    border: none;
-    background: #000;
-    color: white;
-    font-weight: 500;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background, color, 300ms;
-}
 
 .cover{
     margin: 1cm;
@@ -35,6 +24,7 @@ main{
     margin-top: 40px;
 }
 
+
 .inicio_button{
     padding: 1rem 1.8rem;
     font-size: 1.5rem;
@@ -54,6 +44,7 @@ main{
     box-shadow: none;
     transform: translateY(0.4rem);
     transition: .5s;
+    text-decoration: none;
 }
 
 .inicio_button > a{
