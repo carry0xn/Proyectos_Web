@@ -38,5 +38,50 @@ header > nav > a{
   justify-content: center;
   align-items: center;
 }
+/*estilos del nav desplegable mobile*/
 
+#desplegable{
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 40%;
+  text-align: center;
+}
+#desplegable > a{
+  display: block;
+  font: 1.5rem var(--title);
+  text-decoration: none;
+  color: white;
+  padding: 2%;
+}
+#desplegable > a:hover{
+  text-decoration: underline white;
+}
+.mostrar_desplegable{
+  display: none;
+}
 
+/*Agremamos responsividad a la barra de navegación*/
+
+@media(max-width: 720px){
+  h1{
+      font-size: 1.2rem;
+  }
+  #mobile{
+      display: flex;
+      flex-direction: row-reverse;
+  }
+  #mobile > button{
+      width: 80px;
+      height: 50px;
+      margin: auto 5%;
+      border: solid white 2px;
+      border-radius: 15%;
+      background-color: transparent;
+      color: white;
+      font-size: 2rem;
+  }
+  #escritorio{
+      display: none;
+  }
+}

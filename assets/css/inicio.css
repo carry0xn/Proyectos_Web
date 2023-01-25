@@ -100,14 +100,6 @@ main{
 
 }
 
-@media(max-width: 1250px){
-    .inicio_servicios > div{
-        flex: 100%;
-        border: none;
-    }
-}
-
-
 @media (max-width: 720px) {
     .cover{
         background-image: url("../img/gifprueba.gif");
@@ -118,7 +110,7 @@ main{
     }
     .text__information-cover{
         flex: 100%;
-        background-color: #038abbe8;
+        background-color: #ffffffe8;
         padding: 5%;
     }
 
@@ -126,11 +118,11 @@ main{
         display: none;
     }
     
-    .media__cover{
+    .inicio_portfolio > div{
         flex: 100%;
     }
 
-    .media__cover{
+    .inicio_servicios > div{
         flex: 100%;
         border: none;
     }
