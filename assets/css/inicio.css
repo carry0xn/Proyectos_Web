@@ -107,6 +107,7 @@ main{
         background-position:right;
         padding: 0%;
     }
+
     .text__information-cover{
         flex: 100%;
         background-color: #ffffffe8;
@@ -120,9 +121,5 @@ main{
     .inicio_portfolio > div{
         flex: 100%;
     }
-
-    .inicio_servicios > div{
-        flex: 100%;
-        border: none;
-    }
+    
 }
