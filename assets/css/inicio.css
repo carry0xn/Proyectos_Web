@@ -106,6 +106,7 @@ main{
         background-repeat: no-repeat;
         background-position:right;
         padding: 0%;
+        display: block;
     }
 
     .text__information-cover{
