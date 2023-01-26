@@ -102,17 +102,28 @@ main{
 
 @media (max-width: 720px) {
     .cover{
+        background-image: url("../img/gifprueba.gif");
         background-size: contain;
         background-repeat: no-repeat;
         background-position:right;
         padding: 0%;
         display: block;
+        flex: 100%;
     }
+
+    .inicio_button{
+        margin-top: 1cm;
+    }
+
 
     .text__information-cover{
         flex: 100%;
         background-color: #ffffffe8;
         padding: 5%;
+    }
+
+    .media__cover img{
+        ;
     }
 
     .text__information-cover:nth-child(2){
