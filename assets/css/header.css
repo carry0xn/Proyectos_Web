@@ -1,11 +1,10 @@
-/*estilos del header de la página*/
 header{
   width: 100%;
   height: 40px;;
 }
 
 /* Navbar links */
-.navbar > a {
+#escritorio > a {
   width: 11%;
   height: 100px;
   float: right;
@@ -16,10 +15,21 @@ header{
 }
   
 /* Navbar links on mouse-over */
-.navbar a:hover {
+#escritorio a:hover {
   background-color:rgb(190, 190, 190);
 }
-  
+
+.menu-icon{
+  width: 11%;
+  height: 100px;
+  float: letf;
+  text-align: center;
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+
+}
+
 header > nav > div > a, .icon > a{
   background-color: transparent;
   flex: 10%;
@@ -34,7 +44,7 @@ header > nav > div > a, .icon > a{
 header > nav > a{
   flex: 40%;
   font: 1.5rem var(--title);
-  display: flex;
+  
   justify-content: center;
   align-items: center;
 }
@@ -49,17 +59,17 @@ header > nav > a{
   right: 0;
   width: 40%;
   text-align: center;
-  background-color: grey;
+  background-color: white;
 }
 #desplegable > a{
   display: block;
   font: 1.5rem var(--title);
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 2%;
 }
 #desplegable > a:hover{
-  text-decoration: underline white;
+  background-color:rgb(190, 190, 190);
 }
 .mostrar_desplegable{
   display: none;
@@ -79,10 +89,10 @@ header > nav > a{
       width: 80px;
       height: 50px;
       margin: auto 5%;
-      border: solid white 2px;
+      border: solid rgb(0, 0, 0) 2px;
       border-radius: 15%;
       background-color: transparent;
-      color: white;
+      color: rgb(0, 0, 0);
       font-size: 2rem;
   }
   #escritorio{
