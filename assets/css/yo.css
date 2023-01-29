@@ -1,7 +1,6 @@
 .yo{
   display: flex;
   width: 100%;
-  display: flex;
   flex-wrap: wrap;
 }
 
@@ -57,5 +56,6 @@
     float: left;
     width: 100%;
     display: block;
+    align-items: center;
   }
 }

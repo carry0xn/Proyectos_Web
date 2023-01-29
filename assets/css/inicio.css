@@ -131,4 +131,10 @@ section > div > p{
         flex: 100%;
         border: none;
     }
+    .inicio_button{
+        box-shadow: none;
+        transform: translateY(0.4rem);
+        transition: .5s;
+        display: block;
+    }
 }
