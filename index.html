@@ -5,79 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Slabo+27px&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4b36ac4034.js" crossorigin="anonymous"></script>
-    
-    <title>Mi CV</title>
-    <link rel="icon" type="image/x-icon" href="./assets/img/2023-01-16-141818-Dibujo 3.png">
+    <title>Construyendo Webs</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/construyendo-webs-favicon.ico">
 </head>
 <body>
-    
     <header>
         <nav>
+            <div class="menu-icon">
+                <div class="icon">
+                    <a href="index.html">
+                        <img src="./assets/img/6073873.png" alt="icon" width="50">
+                        <h1> Carolina Rodriguez Medina </h1>
+                    </a>
+                </div>
+            </div>
 
             <div id="escritorio">
+
+                <a href="index.html"> <i class="fa fa-fw fa-home"></i> Home </a> 
                 <a href="yo.html"> <i class="fa fa-fw fa-user"></i> Sobre Mi </a>
                 <a href="mis_proyectos.html"> <i class="fa fa-fw fa-code"></i> Mis Proyectos </a>
-                <a href="index.html"> <i class="fa fa-fw fa-home"></i> Home </a> 
+                
             </div>
             <div id="mobile">
                 <button onclick="mostrarNavMobile()"><i class="fa-solid fa-bars"></i></button>
             </div>
         </nav>
         <div id="desplegable" class="mostrar_desplegable">
+
+            <a href="index.html"> <i class="fa fa-fw fa-home"></i> Home </a> 
             <a href="yo.html"> <i class="fa fa-fw fa-user"></i> Sobre Mi </a>
             <a href="mis_proyectos.html"> <i class="fa fa-fw fa-code"></i> Mis Proyectos </a>
-            <a href="index.html"> <i class="fa fa-fw fa-home"></i> Home </a> 
+            
         </div>
     </header>
-
-    
-
     <main>
-        
-        <div class="cover">
-            
-            <div class="text__information-cover">
-                <h1>Bienvenidos</h1>
-
-                <p> Soy Carolina Rodriguez Medina. Soy una estudiante de la carrera Tecnicatura en Programacion.
-                    Tengo 21 años, me apasiona mucho la programación y estoy siempre dispuesta a aprender algo nuevo.</p>
+        <section id="inicio_header">
+            <div>
+                <h2>Bienvenidos</h2>
                 
+                <p>Me llamo Carolina y soy una estudiante de la carrera Tecnicatura en Programacion.</p>
+                <button class="inicio_button"><a href="yo.html">Sobre Mi</a></button>
                 <a  class="inicio_button"
                     href="./assets/cv/CV Carolina.pdf"
                     download="Carolina Rodriguez Medina CV">
                     <i class="fas fa-file-download"></i> Descargar CV
                 </a>
-                
-                <button class="inicio_button"><a href="yo.html">Mas Sobre Mi</a></button>
-
-            </div>
-
-            <div class="media__cover">
-                <img src="./assets/img/gifprueba.gif" alt="Foto Relleno">
-            </div>
-            
-        </div>
-
-        <div class="inicio_portfolio">
-            <h2> Lenguajes de la programación que manejo </h2>
-            <div>
-                <img src="./assets/img/python.jpeg" alt="imagen" class="inicio_image">
-                <h3>Python</h3>
             </div>
             <div>
-                <img src="./assets/img/js.png" alt="imagen" class="inicio_image">
-                <h3>JavaScript</h3>
+                <img src="./assets/img/@mix-and-match-studio-7.png" alt="foteto">
             </div>
-            <div>
-                <img src="./assets/img/sql.png" alt="imagen" class="inicio_image">
-                <h3>SQL</h3>
-            </div>
-            <button class="inicio_button"><a href="mis_proyectos.html">Ver Proyectos</a></button> 
-        </div>
-        
+        </section>
+        <section class="inicio_portfolio">
+                <h2> Lenguajes de la programación que manejo </h2>
+                <div>
+                    <img src="./assets/img/python.jpeg" alt="imagen" class="inicio_image">
+                    <h3>Python</h3>
+                </div>
+                <div>
+                    <img src="./assets/img/js.png" alt="imagen" class="inicio_image">
+                    <h3>JavaScript</h3>
+                </div>
+                <div>
+                    <img src="./assets/img/sql.png" alt="imagen" class="inicio_image">
+                    <h3>SQL</h3>
+                </div>
+                <button class="inicio_button"><a href="mis_proyectos.html">Ver Proyectos</a></button> 
+        </section>
 
     </main>
     <footer>
@@ -87,12 +85,10 @@
             <a href="https://wa.me/1169512534?text=Queria%20realizar%20la%20siguiente%20consulta%20"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
         <div>
+            <a href="index.html"> <i class="fa fa-fw fa-home"></i> Home </a> 
             <a href="yo.html"> <i class="fa fa-fw fa-user"></i> Sobre Mi </a>
             <a href="mis_proyectos.html"> <i class="fa fa-fw fa-code"></i> Mis Proyectos </a>
-            <a href="index.html"> <i class="fa fa-fw fa-home"></i> Home </a> 
         </div>
     </footer>
-
-
 </body>
 </html>

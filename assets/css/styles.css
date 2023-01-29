@@ -6,8 +6,13 @@
 
 /*estilos generales y variables*/
 :root{
-    --title: 'Times New Roman', Times, serif;
-    --text: 'Roboto', sans-serif;
+    --color1: #000000;
+    --color2: #949494;
+    --color3: #afafaf;
+    --color4: #e6e6e6;
+    --color5: #d3d3d3;
+    --title: 'Times New Roman','serif';
+    --text: 'Times', sans-serif;
 }
 
 *{
@@ -16,17 +21,10 @@
     margin: 0;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4, h5, h6{
     font-family: var(--title);
-    word-spacing: 5px;
-} 
-
-h4, h5, h6{
-    font-family: var(--text);
-    word-spacing: 5px;
 }
 
 p, span, a{
     font-family: var(--text);
-    word-spacing: 5px;
 }
