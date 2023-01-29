@@ -117,6 +117,7 @@ section > div > p{
         flex: 100%;
         background-color: var(--color3);
         padding: 5%;
+        display: block;
     }
 
     #inicio_header > div:nth-child(2){
@@ -130,11 +131,5 @@ section > div > p{
     .inicio_servicios > div{
         flex: 100%;
         border: none;
-    }
-    .inicio_button{
-        box-shadow: none;
-        transform: translateY(0.4rem);
-        transition: .5s;
-        display: block;
     }
 }
