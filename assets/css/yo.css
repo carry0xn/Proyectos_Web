@@ -125,7 +125,7 @@ time {
 
 
 @media (max-width: 720px) {
-  .body{
+  .yo{
     width: 100%;
     display: block;
     align-items: center;
@@ -142,6 +142,6 @@ time {
   .timeline ul li div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #F45B69 transparent transparent;
+    border-color: transparent #c9c9c9 transparent transparent;
   }
 }
