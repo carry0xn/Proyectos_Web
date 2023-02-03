@@ -1,8 +1,6 @@
 .container {
     margin: 1cm;
-    padding: 1cm;
-
-    margin-top: 60px;
+    margin-top: 30px;
     position: relative;
     width: 100%;
     display: flex;
