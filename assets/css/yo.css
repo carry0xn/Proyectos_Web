@@ -140,6 +140,13 @@ time {
     width: 100%;
     display: block;
     align-items: center;
+    text-align: center;
+  }
+  .aside_banner_content{
+    width: 100%;
+  }
+  .timeline{
+    width: 100%;
   }
   .timeline ul li {
     margin-left: 20px;
