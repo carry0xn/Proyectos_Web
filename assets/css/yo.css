@@ -125,8 +125,7 @@ time {
 
 
 @media (max-width: 720px) {
-  .home_banner_area{
-    float: left;
+  .body{
     width: 100%;
     display: block;
     align-items: center;
