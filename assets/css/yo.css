@@ -1,3 +1,7 @@
+.yo{
+  background-color: var(--color2);
+}
+
 .aside_banner_content{
   float: left;
   width: 30%;
@@ -5,18 +9,21 @@
 }
 
 .banner_content{
-  
   padding: 1cm;
   border-radius: 2rem;
   margin: 1rem;
   border: solid black 1.5px;
   hyphens:auto;
-  background-color: lightgray;
+  /*background-color: var(--color2);*/
+  background-image: url('../img/aesthetic.gif');
 }
-
+.media h3{
+  text-decoration: underline;
+  margin-bottom: 0.5cm;
+  margin-top: 0.5cm;
+}
 .banner_content .media img {
   margin-top: 1cm;
-  margin-bottom: 1cm;
   border: solid black 1.5px;
   margin-left: 1cm;
 }
@@ -25,141 +32,135 @@
   text-decoration: none;
   color: black;
 }
+.list_basic_info li {
+  padding: .25rem .25rem .25rem;
+}
+/*LINEA DEL TIEMPO*/
+
+.page{
+  padding: 3rem 2rem 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.time{
+  padding: var(--timePadding, .25rem 1.25rem .25rem);
+  background-color: var(--timeBackgroundColor, #f0f0f0);
+
+  font-size: var(--timeFontSize, 1rem);
+  font-weight: var(--timeFontWeight, 700);
+  text-transform: var(--timeTextTransform, uppercase);
+  color: var(--timeColor, currentColor);
+  display: var(--timeDisplay, inline-flex);
+}
+
+.time__month{
+  margin-left: var(--timelineMounthMarginLeft, .25em);
+}
+
+.card{
+  padding: var(--timelineCardPadding, 1.5rem 1.5rem 1.25rem);
+  border-radius: var(--timelineCardBorderRadius, 2px);
+  border-left: var(--timelineCardBorderLeftWidth, 3px) solid var(--timelineCardBorderLeftColor, var(--uiTimelineMainColor));
+  box-shadow: var(--timelineCardBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24));
+  background-color: var(--timelineCardBackgroundColor, #fff);
+}
+
+.card__content{
+  font-size: var(--cardTitleFontSize, 1.25rem);
+  margin-top: var(--cardContentMarginTop, .5rem);
+}
+
+
+/*
+=====
+CORE STYLES
+=====
+*/
 
 .timeline{
-  width: 70%;
-  text-align: center;
-  float: right;
-}
-.timeline h1{
-  text-align: center;
-  margin-top: 1cm;
+  display: var(--timelineDisplay, grid);
+  grid-row-gap: var(--timelineGroupsGap, 2rem);
 }
 
-.timeline ul {
-  padding: 30px 0;
+/*
+1. If timeline__year isn't displaed the gap between it and timeline__cards isn't displayed too
+*/
+
+.timeline__year{
+  margin-bottom: 1.25rem; /* 1 */
 }
 
-.timeline ul li {
-  list-style-type: none;
+.timeline__cards{
+  display: var(--timeloneCardsDisplay, grid);
+  grid-row-gap: var(--timeloneCardsGap, 1.5rem);
+}
+
+
+/*
+=====
+SKIN
+=====
+*/
+
+.timeline{
+  --uiTimelineMainColor: var(--timelineMainColor, #222);
+  --uiTimelineSecondaryColor: var(--timelineSecondaryColor, #fff);
+
+  border-left: var(--timelineLineWidth, 3px) solid var(--timelineLineBackgroundColor, var(--uiTimelineMainColor));
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.timeline__year{
+  --timePadding: var(--timelineYearPadding, .5rem 1.5rem);
+  --timeColor: var(--uiTimelineSecondaryColor);
+  --timeBackgroundColor: var(--uiTimelineMainColor);
+  --timeFontWeight: var(--timelineYearFontWeight, 400);
+}
+
+.timeline_text{
+  justify-content: center;
+  
+  --timePadding: var(--timelineYearPadding, .6rem 2.5rem);
+  --timeColor: var(--uiTimelineSecondaryColor);
+  --timeBackgroundColor: var(--uiTimelineMainColor);
+  --timeFontWeight: var(--timelineYearFontWeight, 900);
+}
+
+.timeline__card{
   position: relative;
-  width: 6px;
-  margin: 0 auto;
-  padding-top: 30px;
-  background: #000000;
+  margin-left: var(--timelineCardLineGap, 1rem);
 }
 
-.timeline ul li::after {
+/*
+1. Stoping cut box shadow
+*/
+
+.timeline__cards{
+  overflow: hidden;
+  padding-top: .25rem; /* 1 */
+  padding-bottom: .25rem; /* 1 */
+}
+
+.timeline__card::before{
   content: "";
+  width: 100%;
+  height: var(--timelineCardLineWidth, 2px);
+  background-color: var(--timelineCardLineBackgroundColor, var(--uiTimelineMainColor));
+
   position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: inherit;
-  z-index: 1;
+  top: var(--timelineCardLineTop, 1rem);
+  left: -50%;
+  z-index: -1;
 }
 
-.timeline ul li div {
-  position: relative;
-  bottom: 0;
-  width: 400px;
-  padding: 15px;
-  background: #c9c9c9;
-}
-
-.timeline ul li div::before {
-  content: "";
-  position: absolute;
-  bottom: 7px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
-
-.timeline ul li:nth-child(odd) div {
-  left: 45px;
-}
-
-.timeline ul li:nth-child(odd) div::before {
-  left: -15px;
-  border-width: 8px 16px 8px 0;
-  border-color: transparent #c9c9c9 transparent transparent;
-}
-
-.timeline ul li:nth-child(even) div {
-  left: -439px;
-}
-
-.timeline ul li:nth-child(even) div::before {
-  right: -15px;
-  border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #c9c9c9;
-}
-
-time {
-  display: block;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-
-/* EFFECTS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.timeline ul li::after {
-  transition: background 0.5s ease-in-out;
-}
-
-.timeline ul li.in-view::after {
-  background: #c9c9c9;
-}
-
-.timeline ul li div {
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
-}
-
-.timeline ul li div {
-  transform: translate3d(200px, 0, 0);
-}
-
-.timeline ul li.in-view div {
-  transform: none;
-  visibility: visible;
-  opacity: 1;
-}
-
-
-@media (max-width: 720px) {
-  .yo{
-    width: 100%;
-    display: block;
-    align-items: center;
-    text-align: center;
-  }
-  .aside_banner_content{
-    width: 100%;
-  }
-  .timeline{
-    width: 100%;
-  }
-  .timeline ul li {
-    margin-left: 20px;
-  }
-  .timeline ul li div {
-    width: calc(100vw - 91px);
-  }
-  .timeline ul li:nth-child(even) div {
-    left: 45px;
-  }
-  .timeline ul li:nth-child(even) div::before {
-    left: -15px;
-    border-width: 8px 16px 8px 0;
-    border-color: transparent #c9c9c9 transparent transparent;
-  }
+/*
+=====
+SETTINGS
+=====
+*/
+/**/
+.timeline{
+  --timelineMainColor: #9645bb;
 }

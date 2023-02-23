@@ -7,10 +7,10 @@
 /*estilos generales y variables*/
 :root{
     --color1: #000000;
-    --color2: #949494;
-    --color3: #afafaf;
-    --color4: #e6e6e6;
-    --color5: #d3d3d3;
+    --color2: #fbdbff;
+    --color3: #d857ff;
+    --color4: #1c001d;
+    --color5: #ffffff;
     --title: 'Times New Roman','serif';
     --text: 'Times', sans-serif;
 }

@@ -40,6 +40,10 @@ header > nav > a{
     align-items: center;
 }
 
+#escritorio > a:hover{
+    text-decoration:var(--color5) underline;
+}
+
 #mobile{
     display: none;
 }

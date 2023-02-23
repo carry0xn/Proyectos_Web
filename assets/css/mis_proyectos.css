@@ -1,4 +1,11 @@
-.container {
+.porfolio{
+  background-color: var(--color2);
+  padding: 3rem 2rem 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.proyectos {
     margin: 1cm;
     margin-top: 30px;
     position: relative;
@@ -7,7 +14,7 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-  .container .box {
+  .proyectos .box {
     position: relative;
     width: 275px;
     height: 275px;
@@ -16,26 +23,28 @@
     overflow: hidden;
     margin-right: 100px;
     margin-top: 100px;
+    margin-bottom: 3cm;
   }
-  .container:hover .box {
+  .proyectos:hover .box {
     transform: rotateY(25deg);
   }
-  .container .box:hover ~ .box {
+  .proyectos .box:hover ~ .box {
     transform: rotateY(-25deg);
   }
-  .container .box:hover {
+  .proyectos .box:hover {
     transform: rotateY(0deg) scale(1.25);
     z-index: 1;
     box-shadow: 0 25px 40px rgba(0,0,0,0.5);
   }
-  .container .box .imgBx {
+  .proyectos .box .imgBx {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    
   }
-  .container .box .imgBx:before {
+  .proyectos .box .imgBx:before {
     content: '';
     position: absolute;
     top: 0;
@@ -48,18 +57,19 @@
     transition: 0.5s;
     mix-blend-mode: multiply;
   }
-  .container .box:hover .imgBx:before {
+  .proyectos .box:hover .imgBx:before {
     opacity: 0;
   }
-  .container .box .imgBx img {
+  .proyectos .box .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
   }
-  .container .box .content {
+  .proyectos .box .content {
     position: absolute;
     top: 1;
     left: 0;
@@ -71,7 +81,7 @@
     align-items: flex-end;
     box-sizing: border-box;
   }
-  .container .box .content h2 {
+  .proyectos .box .content h2 {
     color: rgb(0, 0, 0);
     transition: 0.5s;
     text-transform: uppercase;
@@ -80,21 +90,21 @@
     transform: translateY(200px);
     transition-delay: 0.3s;
   }
-  .container .box:hover .content h2 {
+  .proyectos .box:hover .content h2 {
     transform: translateY(0px);
   }
-  .container .box .content p {
+  .proyectos .box .content p {
     color: rgb(0, 0, 0);
     transition: 0.5s;
     font-size: 14px;
     transform: translateY(200px);
     transition-delay: 0.4s;
   }
-  .container .box:hover .content p {
+  .proyectos .box:hover .content p {
     transform: translateY(0px);
   }
 
-  .container .box .content a {
+  .proyectos .box .content a {
     font-weight: bold;
     text-decoration: none;
     color: rgb(0, 0, 0);

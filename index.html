@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/4b36ac4034.js" crossorigin="anonymous"></script>
     <title> Mi Web </title>
     <link rel="icon" type="image/x-icon" href="/assets/img/3003511.png">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -47,31 +48,46 @@
     <main>
         <section id="inicio_header">
             <div>
-                <h2>Bienvenidos</h2>
                 
-                <p>Me llamo Carolina y soy una estudiante de la carrera Tecnicatura en Programacion.</p>
+                <div class="saludo">
+                    <div class="saludo_container">
+                      <p class="saludo_container_text">
+                        Hola
+                      </p>
+                      
+                      <ul class="saludo_container_list">
+                        <li class="saludo_container_list_item">A Todos !</li>
+                        <li class="saludo_container_list_item">Sean bienvenidos !</li>
+                        <li class="saludo_container_list_item">Gente !</li>
+                        <li class="saludo_container_list_item">Gracias por ver !</li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="inicio_intro"> 
+                <p>Mi nombre es Carolina, soy una estudiante, de la carrera Tecnicatura en Programacion, que le gusta mucho el Desarrollo Web.</p>
                 <button class="inicio_button"><a href="yo.html">Sobre Mi</a></button>
+            </div>
         
-            </div>
-            <div>
-                <img src="./assets/img/@mix-and-match-studio-7.png" alt="foteto">
-            </div>
         </section>
-        <section class="inicio_portfolio">
-                <h2> Lenguajes de la programación que manejo </h2>
-                <div>
-                    <img src="./assets/img/python.jpeg" alt="imagen" class="inicio_image">
-                    <h3>Python</h3>
+
+        <section class="inicio_lenguajes">
+                <h2> Lenguajes de la programación que conozco </h2>
+                
+                <div class="porfolio_container">
+                    <div class="avatar">
+                        <img src="assets/img/Python.jpg" class="img_lenguaje" />
+                    </div>
+                    <div class="avatar">
+                        <img src="assets/img/sql.jpg" class="img_lenguaje" />
+                    </div>
+                    <div class="avatar">
+                        <img src="assets/img/js.jpeg" class="img_lenguaje" />
+                    </div>
                 </div>
-                <div>
-                    <img src="./assets/img/js.png" alt="imagen" class="inicio_image">
-                    <h3>JavaScript</h3>
+                <div class="boton_porfolio">
+                    <button class="inicio_button"><a href="mis_proyectos.html">Ver Proyectos</a></button> 
                 </div>
-                <div>
-                    <img src="./assets/img/sql.png" alt="imagen" class="inicio_image">
-                    <h3>SQL</h3>
-                </div>
-                <button class="inicio_button"><a href="mis_proyectos.html">Ver Proyectos</a></button> 
         </section>
 
     </main>

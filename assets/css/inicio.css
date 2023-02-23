@@ -7,67 +7,147 @@ section{
     padding: 2% 5%;
 }
 
-section:nth-child(even){
-    background-color: var(--color4);
-}
-
-section:nth-child(odd){
-    background-color: var(--color5);
-}
-
 /*Estilos header del inicio*/
 
 #inicio_header{
-    background-color: var(--color3);
     width: 100%;
+    background-image: url("../img/2641048.gif");
 }
 
-#inicio_header > div{
-    flex: 50%;
-    font-size: 2rem;
-}
-
-#inicio_header > div > img {
-    max-width: 700px;
-    width: 80%;
-}
-#inicio_header > div:has(img){
-    text-align: center;
-}
-
-
-/*Estilo sección portfolio*/
-.inicio_portfolio{
-    justify-content: center;
-}
-.inicio_portfolio > h2{
-    flex: 100%;
-    text-align: center;
-    font-size: 2.5rem;
-}
-.inicio_portfolio > div{
-    flex: 33%;
-    text-align: center;
-}
-.inicio_portfolio > div > img {
-    width: 60%;
-    max-width: 400px;
-}
-.inicio_portfolio > div > h3{
-    font-size: 1.8rem;
-}
-
-.inicio_image{
-    height: 85%;
-    max-width: 300px;
-}
-
-section > div > h3{
+.saludo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 160px;
+    
+    
     font-family: var(--title);
+    font-size: 35px;
+    line-height: 40px;
+    color: #000000;
+}
+    
+.saludo_container {
+    font-weight: 700;
+    overflow: hidden;
+    height: 40px;
+    padding: 0 40px;
+}
+.saludo_container:before {
+        content: '[';
+        left: 0;
+      }
+  
+.saludo_container:after {
+        content: ']';
+        position: absolute;
+        right: 0;
+}
+  
+.saludo_container:after, .saludo_container:before {
+    position: absolute;
+    top: 0;
+        
+    color: #572697;
+    font-size: 42px;
+    line-height: 40px;
+        
+    -webkit-animation-name: opacity;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+  
+.saludo_container_text {
+    display: inline;
+    float: left;
+    margin: 0;
+}
+  
+.saludo_container_list {
+        margin-top: 0;
+        padding-left: 110px;
+        text-align: left;
+        list-style: none;
+        font-family: var(--text);
+        
+        -webkit-animation-name: change;
+        -webkit-animation-duration: 10s;
+        -webkit-animation-iteration-count: infinite;
+        animation-name: change;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+}
+.saludo_container_list_item {
+    line-height:40px;
+    margin:0;
+}
+      
+  
+@-webkit-keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+@-webkit-keyframes change {
+    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+    16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+    33.32%,45.98% {transform:translate3d(0,-50%,0);}
+    49.98%,62.64% {transform:translate3d(0,-75%,0);}
+    66.64%,79.3% {transform:translate3d(0,-50%,0);}
+    83.3%,95.96% {transform:translate3d(0,-25%,0);}
+  }
+  
+@-o-keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+@-o-keyframes change {
+    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+    16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+    33.32%,45.98% {transform:translate3d(0,-50%,0);}
+    49.98%,62.64% {transform:translate3d(0,-75%,0);}
+    66.64%,79.3% {transform:translate3d(0,-50%,0);}
+    83.3%,95.96% {transform:translate3d(0,-25%,0);}
+  }
+  
+@-moz-keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+@-moz-keyframes change {
+    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+    16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+    33.32%,45.98% {transform:translate3d(0,-50%,0);}
+    49.98%,62.64% {transform:translate3d(0,-75%,0);}
+    66.64%,79.3% {transform:translate3d(0,-50%,0);}
+    83.3%,95.96% {transform:translate3d(0,-25%,0);}
+  }
+  
+@keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+@keyframes change {
+    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+    16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+    33.32%,45.98% {transform:translate3d(0,-50%,0);}
+    49.98%,62.64% {transform:translate3d(0,-75%,0);}
+    66.64%,79.3% {transform:translate3d(0,-50%,0);}
+    83.3%,95.96% {transform:translate3d(0,-25%,0);}
 }
 
-section > div > p{
-    font-family: var(--text);
+.inicio_intro{
+    margin-top: 7cm;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
 }
 
 .inicio_button{
@@ -97,25 +177,70 @@ section > div > p{
     text-decoration: none;
     color: black;
 }
-@media(max-width: 1250px){
-    .inicio_servicios > div{
-        flex: 100%;
-        border: none;
-    }
+
+/*Estilo sección portfolio*/
+.inicio_lenguajes{
+    background-color: var(--color2);
+    justify-content: center;
+    display: block;
+}
+.inicio_lenguajes > h2{
+    flex: 100%;
+    text-align: center;
+    font-size: 2.5rem;
 }
 
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.porfolio_container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.avatar {
+	width: 300px;
+	height: 300px;
+	box-sizing: border-box;
+	border: 5px white solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+    display: flex;
+    margin-right: 2cm;
+    margin-left: 1cm;
+    margin-top: 1cm;
+    
+}
+.img_lenguaje { 
+    width: 100%; 
+    height: auto; 
+}
+.boton_porfolio{
+    text-align: center;
+}
 
 @media (max-width: 720px) {
-    #inicio_header{
-        background-image: url("../img/@mix-and-match-studio-7.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position:right;
-        padding: 0%;
-    }
+    
     #inicio_header > div{
         flex: 100%;
-        background-color: var(--color3);
         padding: 5%;
         display: block;
     }
@@ -126,10 +251,5 @@ section > div > p{
     
     .inicio_portfolio > div{
         flex: 100%;
-    }
-
-    .inicio_servicios > div{
-        flex: 100%;
-        border: none;
     }
 }
