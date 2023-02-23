@@ -236,6 +236,11 @@ section{
 }
 
 @media (max-width: 720px) {
+    .saludo {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+    }
     
     #inicio_header > div{
         flex: 100%;
