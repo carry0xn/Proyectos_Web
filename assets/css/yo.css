@@ -4,11 +4,12 @@
 
 .aside_banner_content{
   float: left;
-  width: 30%;
+  width: 28%;
   display: flex;
 }
 
 .banner_content{
+  
   padding: 1cm;
   border-radius: 2rem;
   margin: 1rem;
@@ -25,7 +26,7 @@
 .banner_content .media img {
   margin-top: 1cm;
   border: solid black 1.5px;
-  margin-left: 1cm;
+  
 }
 
 .banner_content a{
