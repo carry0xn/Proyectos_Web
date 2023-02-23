@@ -165,3 +165,11 @@ SETTINGS
 .timeline{
   --timelineMainColor: #9645bb;
 }
+
+@media (max-width: 720px) {
+  .yo{
+    display: block;
+  }
+
+
+}

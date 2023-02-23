@@ -252,4 +252,7 @@ section{
     .inicio_portfolio > div{
         flex: 100%;
     }
+    .porfolio_container{
+        display: block;
+    }
 }
