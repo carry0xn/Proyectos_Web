@@ -196,7 +196,7 @@ section{
 @media (max-width: 720px) {
     .saludo {
         position: absolute;
-        top: 20%;
+        top: 250px;
         left: 50%;
     }
     
