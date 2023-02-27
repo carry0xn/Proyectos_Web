@@ -1,13 +1,61 @@
+/*Estilo sección portfolio*/
+
 .porfolio{
-  background-color: var(--color2);
-  padding: 3rem 2rem 3rem;
   margin-left: auto;
   margin-right: auto;
+  display: block;
+}
+
+.porfolio_lenguajes{
+  background-color: var(--color2);
+}
+
+.porfolio_proyectos{
+  background-color: var(--color3);
+}
+
+.porfolio_container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.porfolio_titulo{
+  display: flex;
+  justify-content: center;
+  font-family: Comic Sans MS; 
+  color: #e3b4ff; 
+  text-shadow: -1px 0 #442247, 0 1px #624168, 1px 0 #604168, 0 -1px #604168, -2px 2px 0 #624168, 2px 2px 0 #554168, 1px 1px #5d4168, 2px 2px #5a4168, 3px 3px #554168, 4px 4px #5d4168, 5px 5px #584168; 
+}
+.porfolio_titulo{
+  flex: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+.avatar {
+	width: 170px;
+	height: 170px;
+	box-sizing: border-box;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+  display: flex;
+  margin-left: 1cm;
+  margin-top: 2cm;
+  margin-bottom: 2cm;
+    
+}
+.img_lenguaje { 
+  width: 100%; 
+  height: auto; 
 }
 
 .proyectos {
-    margin: 1cm;
-    margin-top: 30px;
     position: relative;
     width: 100%;
     display: flex;
@@ -21,8 +69,8 @@
     transition: 0.5s;
     transform-style: preserve-3d;
     overflow: hidden;
-    margin-right: 100px;
-    margin-top: 100px;
+    margin-right: 1cm;
+    margin-top: 2cm;
     margin-bottom: 3cm;
   }
   .proyectos:hover .box {
