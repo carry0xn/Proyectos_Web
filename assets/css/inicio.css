@@ -202,7 +202,6 @@ section{
     
     #inicio_header > div{
         flex: 100%;
-        padding: 5%;
         display: block;
     }
 
