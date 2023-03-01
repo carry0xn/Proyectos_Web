@@ -1,7 +1,7 @@
 /*Estilos del footer*/
 footer{
     width: 100%;
-    background-image: url("../img/arcoiris.jpg");
+    background-image: url("../img/Polish_20230301_164940575.jpg");
     display: flex;
 }
 footer > div{
@@ -15,7 +15,6 @@ footer > div > p{
     color:var(--color1);
 }
 footer > div > a{
-    display: block;
     font: 1.5rem var(--title);
     text-decoration: none;
     color:var(--color1);
