@@ -202,10 +202,13 @@ section{
         font-size: 20px;
     }
     .saludo_container_list {
-        padding-left: 80px;
+        padding-left: 100px;
     }
     .saludo_container:after, .saludo_container:before {
         font-size: 22px;
+    }
+    .saludo_container {
+        font-weight: 400;
     }
     
     #inicio_header > div{
