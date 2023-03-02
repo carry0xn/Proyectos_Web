@@ -199,15 +199,18 @@ section{
         position: absolute;
         top: 250px;
         left: 50%;
+        font-size: 20px;
+    }
+    .saludo_container_list {
+        padding-left: 80px;
+    }
+    .saludo_container:after, .saludo_container:before {
+        font-size: 22px;
     }
     
     #inicio_header > div{
         flex: 100%;
         display: block;
-    }
-
-    #inicio_header > div:nth-child(2){
-        display: none;
     }
     
 }
