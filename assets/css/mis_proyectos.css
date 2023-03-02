@@ -70,8 +70,8 @@
     transform-style: preserve-3d;
     overflow: hidden;
     margin-right: 1cm;
-    margin-top: 2cm;
-    margin-bottom: 3cm;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
   }
   .proyectos:hover .box {
     transform: rotateY(25deg);

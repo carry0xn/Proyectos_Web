@@ -1,6 +1,7 @@
 /*Estilos del footer*/
 footer{
     width: 100%;
+    min-height: 30vh;
     background-image: url("../img/Polish_20230301_164940575.jpg");
     display: flex;
 }
