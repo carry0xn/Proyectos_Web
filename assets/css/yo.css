@@ -51,6 +51,9 @@
 .purple-button:hover {
   background-color: #7d319f;
 }
+.timeline {
+  width: 80%;
+}
 
 
 /* LINEA DEL TIEMPO */
@@ -188,6 +191,7 @@
   /* Aquí puedes agregar las modificaciones necesarias para que el contenido se vea bien en dispositivos móviles */
   .page {
     padding: 2rem;
+    width: 70%;
     /* Modifica el relleno (padding) para adaptarse a pantallas más pequeñas */
     flex-direction: column;
     /* Cambia la dirección del flujo a vertical */
