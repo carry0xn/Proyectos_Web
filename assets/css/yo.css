@@ -37,6 +37,21 @@
 .list_basic_info li {
   padding: 0.25rem 0.25rem 0.25rem;
 }
+.purple-button {
+  background-color: #9645bb;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.purple-button:hover {
+  background-color: #7d319f;
+}
+
 
 /* LINEA DEL TIEMPO */
 
@@ -188,5 +203,12 @@
   .card__content p {
     font-size: 0.9rem;
     /* Redefine el tamaño de fuente para el contenido de las tarjetas */
+  }
+  .container {
+    flex-direction: row;
+  }
+  
+  .timeline {
+    order: 1; /* Cambia el orden para que aparezca después del aside */
   }
 }
