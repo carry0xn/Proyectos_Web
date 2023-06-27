@@ -19,6 +19,10 @@ section{
     align-items: center;
     text-align: center;
 }
+
+
+  
+
 #inicio_animacion {
     display: flex;
     flex-direction: column;
@@ -210,10 +214,20 @@ section{
     #inicio_animacion {
         height: auto;
     }
-    .botones {
+    
+    #inicio_header {
+        display: flex;
         flex-direction: column;
-        margin: 50px;
+        justify-content: space-between;
+        background-image: url("../img/2641048.gif");
+        align-items: center;
+        height: 100vh;
       }
+      
+      .botones {
+        margin-top: auto;
+      }
+
     .saludo {
         position: absolute;
         top: 250px;
