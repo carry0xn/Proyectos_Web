@@ -26,6 +26,7 @@ section{
     align-items: center;
     height: 50vh;
 }
+
 .saludo {
     position: absolute;
     top: 250px;
@@ -206,6 +207,17 @@ section{
 }
 
 @media (max-width: 720px) {
+    #inicio_animacion {
+        height: auto;
+    }
+    .botones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: 20px;
+        text-align: center;
+      }
     .saludo {
         position: absolute;
         top: 250px;
@@ -221,10 +233,4 @@ section{
     .saludo_container {
         font-weight: 600;
     }
-    
-    #inicio_header > div{
-        flex: 100%;
-        display: block;
-    }
-    
 }
