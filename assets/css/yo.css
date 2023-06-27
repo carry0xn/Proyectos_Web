@@ -26,7 +26,7 @@
 
 .banner_content .media img {
   margin-top: 1cm;
-  border: solid black 1.5px;
+  border: solid var(--color4) 5px;
 }
 
 .banner_content a {
@@ -38,7 +38,7 @@
   padding: 0.25rem 0.25rem 0.25rem;
 }
 .purple-button {
-  background-color: #9645bb;
+  background-color: var(--color4);
   color: white;
   padding: 10px 20px;
   margin-top: 15px;
@@ -182,7 +182,7 @@
 }
 
 .timeline {
-  --timelineMainColor: #9645bb;
+  --timelineMainColor: var(--color4);
 }
 
 @media (max-width: 720px) {

@@ -24,7 +24,7 @@
 .porfolio_titulo{
   display: flex;
   justify-content: center;
-  font-family: Comic Sans MS; 
+  font-family: 'Sigmar', cursive;
   color: #e3b4ff; 
   text-shadow: -1px 0 #442247, 0 1px #624168, 1px 0 #604168, 0 -1px #604168, -2px 2px 0 #624168, 2px 2px 0 #554168, 1px 1px #5d4168, 2px 2px #5a4168, 3px 3px #554168, 4px 4px #5d4168, 5px 5px #584168; 
 }
