@@ -4,8 +4,9 @@
 
 .aside_banner_content {
   float: left;
-  width: 29%;
+  width: 30%;
   display: flex;
+
 }
 
 .banner_content {
@@ -51,10 +52,6 @@
 .purple-button:hover {
   background-color: #7d319f;
 }
-.timeline {
-  width: 80%;
-}
-
 
 /* LINEA DEL TIEMPO */
 
@@ -186,13 +183,15 @@
 }
 
 @media (max-width: 720px) {
-  /* Estilos para dispositivos móviles */
-
-  /* Aquí puedes agregar las modificaciones necesarias para que el contenido se vea bien en dispositivos móviles */
+  .aside_banner_content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .page {
     padding: 2rem;
-    width: 70%;
-    /* Modifica el relleno (padding) para adaptarse a pantallas más pequeñas */
+    width: 100%;
     flex-direction: column;
     /* Cambia la dirección del flujo a vertical */
     align-items: center;
