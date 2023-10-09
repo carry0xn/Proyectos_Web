@@ -1,6 +1,5 @@
 /*estilos del header de la página*/
 header > nav{
-
     display: flex;
     flex-wrap: wrap;
     background-color: var(--color4);

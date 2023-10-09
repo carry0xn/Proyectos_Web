@@ -1,12 +1,3 @@
-/*Estilos del inicio de la página*/
-
-
-section{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2% 5%;
-}
-
 /*Estilos header del inicio*/
 
 #inicio_header{
@@ -189,8 +180,6 @@ section{
     text-decoration: none;
     color: black;
 }
-
-
 
 @keyframes float {
 	0% {
