@@ -1,4 +1,4 @@
-.yo {
+#yo {
   background-color: var(--color2);
 }
 
@@ -14,7 +14,6 @@
   margin: 1rem;
   border: solid black 1.5px;
   hyphens: auto;
-  /*background-color: var(--color2);*/
   background-image: url('../img/aesthetic.gif');
 }
 

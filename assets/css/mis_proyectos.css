@@ -1,6 +1,6 @@
 /*Estilo sección portfolio*/
 
-.porfolio{
+#porfolio{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -27,7 +27,7 @@
 
 .proyectos {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
 
