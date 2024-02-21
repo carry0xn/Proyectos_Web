@@ -89,7 +89,29 @@
     margin:0;
 }
 
-  
+.intro{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color2);
+    align-items: center;
+    
+
+    display: flex;
+    padding: 200px;
+    font-size: 20px;
+}
+.icono{
+    margin-right: 1cm;
+}
+.intro > h2 {
+    margin-top: 50px;
+    color: var(--color1);
+}
+
+.intro > h2 > span {
+    color: var(--color4);
+}
+
 @-webkit-keyframes opacity {
     0%, 100% {opacity:0;}
     50% {opacity:1;}
