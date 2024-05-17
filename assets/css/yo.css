@@ -21,24 +21,27 @@
   text-decoration: underline;
   margin-bottom: 0.5cm;
   margin-top: 0.5cm;
+  color: black; 
 }
 
 .banner_content .media img {
   margin-top: 1cm;
   border: solid var(--color4) 5px;
+  color: black;
 }
 
 .banner_content a {
   text-decoration: none;
-  color: black;
+  color: black; 
 }
 
 .list_basic_info li {
   padding: 0.25rem 0.25rem 0.25rem;
+  color: black; 
 }
 .purple-button {
   background-color: var(--color4);
-  color: white;
+  color: white; 
   padding: 10px 20px;
   margin-top: 15px;
   border: none;
