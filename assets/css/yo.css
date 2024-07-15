@@ -1,7 +1,6 @@
 #yo {
   background-color: var(--color2);
 }
-
 .aside_banner_content {
   float: left;
   width: 30%;
@@ -10,35 +9,46 @@
 
 .banner_content {
   padding: 1cm;
-  border-radius: 2rem;
+  border-radius: 10px;
   margin: 1rem;
-  border: solid black 1.5px;
+  border: none;
   hyphens: auto;
-  background-image: url('../img/aesthetic.gif');
+  background-image: linear-gradient(144deg, #8608b4, #492fed 60%, #bd6fda);
+  font-family: inherit;
+  color: white;
 }
 
 .media h3 {
-  text-decoration: underline;
-  margin-bottom: 0.5cm;
-  margin-top: 0.5cm;
-  color: black; 
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: white; 
 }
 
 .banner_content .media img {
   margin-top: 1cm;
-  border: solid var(--color4) 5px;
-  color: black;
+  width: 200px;
+  height: 200px;
+  background: #e8e8e8;
+  border-radius: 100%;
+  border: none;
+  display: block;
+  margin: auto;
 }
 
 .banner_content a {
   text-decoration: none;
-  color: black; 
+  color: white; 
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .list_basic_info li {
   padding: 0.25rem 0.25rem 0.25rem;
-  color: black; 
+  color: white; 
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
+
 .purple-button {
   background-color: var(--color4);
   color: white; 
@@ -54,129 +64,87 @@
   background-color: #7d319f;
 }
 
-/* LINEA DEL TIEMPO */
 
+/* LINEA DEL TIEMPO */
 .page {
   padding: 3rem 2rem 3rem;
-  margin-left: auto; /* Centra horizontalmente la página */
-  margin-right: auto; /* Centra horizontalmente la página */
-
-  display: flex; /* Cambia el flujo de los elementos a una dirección horizontal */
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas adicionales si no caben en una sola fila */
-  justify-content: center; /* Centra los elementos horizontalmente */
-  align-items: flex-start; /* Alinea los elementos en la parte superior del contenedor */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .time {
   padding: var(--timePadding, 0.25rem 1.25rem 0.25rem);
-  /* Establece el relleno (padding) de los elementos de tiempo */
   background-color: var(--timeBackgroundColor, #f0f0f0);
-  /* Establece el color de fondo de los elementos de tiempo */
   font-size: var(--timeFontSize, 1rem);
-  /* Establece el tamaño de fuente de los elementos de tiempo */
   font-weight: var(--timeFontWeight, 700);
-  /* Establece el peso de la fuente de los elementos de tiempo */
   text-transform: var(--timeTextTransform, uppercase);
-  /* Establece la transformación de texto de los elementos de tiempo */
   color: var(--timeColor, currentColor);
-  /* Establece el color de texto de los elementos de tiempo */
   display: var(--timeDisplay, inline-flex);
-  /* Establece la visualización de los elementos de tiempo como flexibles en línea */
 }
 
 .card {
   padding: var(--timelineCardPadding, 1.5rem 1.5rem 1.25rem);
-  /* Establece el relleno (padding) de las tarjetas de la línea de tiempo */
   border-radius: var(--timelineCardBorderRadius, 2px);
-  /* Establece el radio de borde de las tarjetas de la línea de tiempo */
   border-left: var(--timelineCardBorderLeftWidth, 3px) solid var(--timelineCardBorderLeftColor, var(--uiTimelineMainColor));
-  /* Establece el estilo del borde izquierdo de las tarjetas de la línea de tiempo */
   box-shadow: var(--timelineCardBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24));
-  /* Establece la sombra de las tarjetas de la línea de tiempo */
   background-color: var(--timelineCardBackgroundColor, #fff);
-  /* Establece el color de fondo de las tarjetas de la línea de tiempo */
 }
 
 .card__content {
   font-size: var(--cardTitleFontSize, 1.25rem);
-  /* Establece el tamaño de fuente del contenido de las tarjetas de la línea de tiempo */
   margin-top: var(--cardContentMarginTop, 0.5rem);
-  /* Establece el margen superior del contenido de las tarjetas de la línea de tiempo */
 }
 
 .timeline {
   display: var(--timelineDisplay, grid);
-  /* Configura la visualización como una cuadrícula (grid) */
   grid-row-gap: var(--timelineGroupsGap, 2rem);
-  /* Establece el espacio entre las filas de la cuadrícula */
 }
 
 .timeline__year {
   margin-bottom: 1.25rem;
-  /* Margen inferior para separar el año de las tarjetas de la línea de tiempo */
 }
 
 .timeline {
   --uiTimelineMainColor: var(--timelineMainColor, #222);
-  /* Configura el color principal de la línea de tiempo */
   --uiTimelineSecondaryColor: var(--timelineSecondaryColor, #fff);
-  /* Configura el color secundario de la línea de tiempo */
   border-left: var(--timelineLineWidth, 3px) solid var(--timelineLineBackgroundColor, var(--uiTimelineMainColor));
-  /* Establece el estilo del borde izquierdo de la línea de tiempo */
   padding-top: 1rem;
-  /* Espacio superior para separar el contenido de la línea de tiempo */
   padding-bottom: 1.5rem;
-  /* Espacio inferior para separar el contenido de la línea de tiempo */
 }
 
 .timeline__year {
   --timePadding: var(--timelineYearPadding, 0.5rem 1.5rem);
-  /* Configura el relleno (padding) del año en la línea de tiempo */
   --timeColor: var(--uiTimelineSecondaryColor);
-  /* Configura el color del texto del año */
   --timeBackgroundColor: var(--uiTimelineMainColor);
-  /* Configura el color de fondo del año */
   --timeFontWeight: var(--timelineYearFontWeight, 400);
-  /* Configura el peso de la fuente del año */
 }
 
 .timeline_text {
   justify-content: center;
-  /* Centra el contenido horizontalmente dentro del contenedor de texto de la línea de tiempo */
-
   --timePadding: var(--timelineYearPadding, 0.6rem 2.5rem);
-  /* Configura el relleno (padding) del texto en la línea de tiempo */
   --timeColor: var(--uiTimelineSecondaryColor);
-  /* Configura el color del texto */
   --timeBackgroundColor: var(--uiTimelineMainColor);
-  /* Configura el color de fondo del texto */
   --timeFontWeight: var(--timelineYearFontWeight, 900);
-  /* Configura el peso de la fuente del texto */
 }
 
 .timeline__card {
   position: relative;
-  /* Establece la posición relativa para que los elementos internos puedan tener posicionamiento absoluto */
   margin-left: var(--timelineCardLineGap, 1rem);
-  /* Margen izquierdo para separar las tarjetas de la línea de tiempo */
 }
-
-/* Animacion */
 
 .timeline__card {
   opacity: 0;
-  /* Configuramos la opacidad inicial en 0 */
   transform: translateY(20px);
-  /* Configuramos la posición inicial fuera de la vista */
   transition: opacity 0.5s ease, transform 0.5s ease;
-  /* Agregamos una transición suave */
 }
 
 .timeline__card.animation {
   opacity: 1;
-  /* Cambiamos la opacidad a 1 para que el elemento se vuelva visible */
   transform: translateY(0);
-  /* Movemos el elemento a su posición original */
 }
 
 .timeline {
@@ -194,25 +162,21 @@
     padding: 2rem;
     width: 100%;
     flex-direction: column;
-    /* Cambia la dirección del flujo a vertical */
     align-items: center;
-    /* Centra los elementos horizontalmente */
   }
 
   .timeline__year {
     font-size: 0.8rem;
-    /* Redefine el tamaño de fuente para los años en la línea de tiempo */
   }
 
   .card__content p {
     font-size: 0.9rem;
-    /* Redefine el tamaño de fuente para el contenido de las tarjetas */
   }
   .container {
     flex-direction: row;
   }
   
   .timeline {
-    order: 1; /* Cambia el orden para que aparezca después del aside */
+    order: 1;
   }
 }
