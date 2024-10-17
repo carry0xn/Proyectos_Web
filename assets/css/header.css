@@ -61,7 +61,7 @@ header > nav > a{
     display: none;
 }
 
-/*Agremamos responsividad a la barra de navegación*/
+/*responsividad a la barra de navegación*/
 
 @media(max-width: 720px){
     h1{
