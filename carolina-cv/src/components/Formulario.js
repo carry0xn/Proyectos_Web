@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
+import './css/Header.css'
 
 const Formulario = () => {
     const [mensaje, setMensaje] = useState('')
@@ -11,16 +12,18 @@ const Formulario = () => {
     emailjs.sendForm('service_4qvm70b', 'template_6a8xxil', formRef.current, 'DtRM4AG326nzTI_g5')
     .then((response) => {
         setMensaje('¡Mensaje enviado con éxito!')
-        console.log('SUCCESS!', response.status, response.text)
+        console.log(response.status, response.text)
       })
       .catch((error) => {
         setMensaje('Hubo un error al enviar el mensaje. Inténtalo de nuevo.')
-        console.log('FAILED...', error)
+        console.log(error)
       })
     }
 
     return (
-        <div>
+      
+        <div className='form'>
+          <h1>Hablemos!</h1>
           <form ref={formRef} onSubmit={sendEmail}>
             <input type="text" name="from_name" placeholder="Tu Nombre" required />
             <input type="email" name="from_email" placeholder="Tu Correo" required />
