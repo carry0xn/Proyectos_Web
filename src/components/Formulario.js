@@ -21,7 +21,7 @@ const Formulario = () => {
     }
 
     return (
-      
+      <section id='formulario'>
         <div className='form'>
           <h1>Hablemos!</h1>
           <form ref={formRef} onSubmit={sendEmail}>
@@ -33,6 +33,7 @@ const Formulario = () => {
     
           {mensaje && <p>{mensaje}</p>}
         </div>
+        </section>
       )
     }
 

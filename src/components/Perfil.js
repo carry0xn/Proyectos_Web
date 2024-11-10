@@ -1,9 +1,9 @@
 import React from 'react'
 import profile from './img/profile.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 
 const Perfil = () => (

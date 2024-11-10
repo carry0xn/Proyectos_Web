@@ -7,8 +7,8 @@ import javaScript from './img/javascript-code.jpg'
 import proyectWeb from './img/desarrollo-web-completo-con-html5-css3-js-php-y-mysql.png'
 import sql from './img/para-que-sirve-lenguaje-sql.jpg'
 import dataScience from './img/dataScience.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import './css/Experiencia.css'
 
 const Proyectos = () => (
@@ -200,6 +200,6 @@ const Proyectos = () => (
                 
   </section>
 
-);
+)
 
 export default Proyectos
