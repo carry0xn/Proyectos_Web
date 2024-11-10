@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Proyectos_Web/static/css/main.9c9c995d.css",
-    "main.js": "/Proyectos_Web/static/js/main.06a46fa4.js",
+    "main.js": "/Proyectos_Web/static/js/main.43a0f810.js",
     "static/js/453.1fa62f00.chunk.js": "/Proyectos_Web/static/js/453.1fa62f00.chunk.js",
     "static/media/profile.png": "/Proyectos_Web/static/media/profile.b53cbe0aedcc90b83541.png",
     "static/media/saint_mary.png": "/Proyectos_Web/static/media/saint_mary.1606c1ce1c2442c74d2e.png",
@@ -19,11 +19,11 @@
     "static/media/calculadora.png": "/Proyectos_Web/static/media/calculadora.540720b8d2106cb43869.png",
     "index.html": "/Proyectos_Web/index.html",
     "main.9c9c995d.css.map": "/Proyectos_Web/static/css/main.9c9c995d.css.map",
-    "main.06a46fa4.js.map": "/Proyectos_Web/static/js/main.06a46fa4.js.map",
+    "main.43a0f810.js.map": "/Proyectos_Web/static/js/main.43a0f810.js.map",
     "453.1fa62f00.chunk.js.map": "/Proyectos_Web/static/js/453.1fa62f00.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9c9c995d.css",
-    "static/js/main.06a46fa4.js"
+    "static/js/main.43a0f810.js"
   ]
 }
