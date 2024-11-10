@@ -1,0 +1,163 @@
+#skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding: 2rem;
+    max-width: 100%;
+    margin: 0 auto; 
+    background-color: #d5a6da;
+}
+
+#skills-section img{
+    max-width: 80%;
+    padding: 20px;
+}
+
+.skill-category {
+    flex: 1; 
+    margin: 0 1rem; 
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.skill-category h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ccc; /* Línea decorativa debajo del título */
+    padding-bottom: 0.5rem;
+}
+
+.skill-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-category li {
+    font-size: 1rem;
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  #skills-section {
+      flex-direction: column; 
+      align-items: center;
+  }
+
+  .skill-category {
+      flex: 1 1 100%; 
+      margin: 1rem 0; 
+  }
+}
+/*Proyectos*/
+
+/*Estilo sección portfolio*/
+
+  .proyectos {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+    gap: 1rem;
+    background-color: var(--color3);
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    height: 300px;
+    perspective: 1000px;
+    font-family: sans-serif;
+    margin: 20px;
+    max-width: 100%;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid #8e44ad;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    background: linear-gradient(120deg, #c39bd3 30%, #8e44ad 88%, #dcd0ff 40%, #bb8fce 78%);
+    color: #000000;
+  }
+  
+  .flip-card-back {
+    background: linear-gradient(120deg, #c39bd3 30%, #8e44ad 88%, #dcd0ff 40%, #bb8fce 78%);
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  .imgBx {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .imgBx img {
+    width: 100%; 
+    max-width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+  }
+  
+  .content {
+    padding: 1rem;
+  }
+  
+  .content h2 {
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  
+  .content a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 0.5rem;
+  }
+  
+  .content p {
+    margin: 0.5rem 0;
+  }
+  
+  @media (max-width: 768px) {
+    .flip-card {
+        height: 250px; /* Ajusta la altura en pantallas pequeñas */
+    }
+
+    .content h2 {
+        font-size: 1.1em; /* Reduce el tamaño del texto */
+    }
+    
+    .imgBx img {
+        width: 90%; /* Reduce el tamaño de la imagen ligeramente en móviles */
+    }
+}
