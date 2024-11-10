@@ -1,0 +1,45 @@
+
+header {
+    background-color: #d5a6da; 
+    padding: 15px 0;
+    height: 60px;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #000000; 
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  
+  .nav-links a:hover {
+    color: #b700ff; 
+    transition: color 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    /* Ajustes para pantallas pequeñas */
+    .header-container {
+      flex-direction: column;
+    }
+    
+    nav ul {
+      gap: 10px;
+    }
+  }
+  
