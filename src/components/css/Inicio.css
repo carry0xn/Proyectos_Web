@@ -259,10 +259,12 @@
     background-color: #e9b0ff; 
     color: #000000;
     font-family: 'Arial', sans-serif;
+    max-width: 100%;
   }
   #perfil .container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
   }
   
   .profile-content {
@@ -287,12 +289,21 @@
     line-height: 1.6;
     text-align: center;
 }
-  #perfil .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
+.purple-button {
+  background-color: #b347e6;
+  color: white; 
+  padding: 10px 20px;
+  margin-left: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.purple-button:hover {
+  background-color: #7d319f;
+}
+
   #perfil h2 {
     font-size: 2.5rem;
     font-weight: 700;

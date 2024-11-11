@@ -4,7 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
-
+import cv from './pdf/CV_Carolina_TUP.pdf'
+import pythonCertificado from './pdf/Certificado_Python.pdf'
+import javaScriptCertificado from './pdf/Certificado_JavaScript.pdf'
+import dataScienceCertificado from './pdf/Certificado_Data_Science.pdf'
 
 const Perfil = () => (
   <section id="perfil">
@@ -16,13 +19,15 @@ const Perfil = () => (
         <div className="profile-details">
           <p className="intro-text">
           Bienvenido a mi portafolio. Soy Carolina, estudiante de <strong>Licenciatura en Informática</strong> y 
-          <strong>Técnica en Programación</strong> con experiencia en tecnologías como <strong>React, JavaScript</strong> 
+          <strong> Técnica en Programación</strong> con experiencia en tecnologías como <strong>React, JavaScript</strong> 
           y <strong>CSS</strong>. Tengo un alto nivel de inglés, adquirido a lo largo de varios años de estudio, y disfruto 
           de asumir nuevos desafíos en cada proyecto. Si estás buscando a alguien comprometido, proactivo y con habilidades técnicas y lingüísticas, 
           ¡has llegado al lugar indicado!</p>
           <p className="location">
             <FontAwesomeIcon icon={faMapMarkerAlt} /> Buenos Aires, Argentina
+            
           </p>
+          <a href={cv} download><button className="purple-button">Descargar CV</button></a>
         <ul className="contact-info">
             <li><a href="mailto:rodriguezc.medina@gmail.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faEnvelope} /> </a></li>
             <li><a href="https://www.linkedin.com/in/carolina-rodriguez-medina-676353225/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin}/> </a></li>
@@ -47,10 +52,10 @@ const Perfil = () => (
 
       <h3>Cursos Complementarios</h3>
       <ul className="course-list">
-        <li><strong>Full Stack Python</strong> – Codo a Codo</li>
-        <li><strong>Full Stack JavaScript</strong> – Codo a Codo</li>
-        <li><strong>Python para Data Science</strong> – Universidad Nacional de Hurlingham (colaboración con CETI)</li>
-        <li><strong>PostgreSQL</strong> – Universidad Nacional de Hurlingham (colaboración con CETI)</li>
+        <li><strong>Full Stack Python</strong> – Codo a Codo <a href={pythonCertificado} download> <button class="purple-button">Descargar Certificado</button></a></li>
+        <li><strong>Full Stack JavaScript</strong> – Codo a Codo <a href={javaScriptCertificado} download> <button class="purple-button">Descargar Certificado</button></a></li>
+        <li><strong>Python para Data Science</strong> – Universidad Nacional de Hurlingham (colaboración con CETI) <a href={dataScienceCertificado} download> <button class="purple-button">Descargar Certificado</button></a></li>
+        <li><strong>PostgreSQL</strong> – Universidad Nacional de Hurlingham (colaboración con CETI, en curso)</li>
       </ul>
       </div>
     </div>
