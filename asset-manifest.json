@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/Proyectos_Web/static/css/main.e0e6477b.css",
-    "main.js": "/Proyectos_Web/static/js/main.9034a913.js",
+    "main.css": "/Proyectos_Web/static/css/main.d49b30fa.css",
+    "main.js": "/Proyectos_Web/static/js/main.6b87078a.js",
     "static/js/453.1fa62f00.chunk.js": "/Proyectos_Web/static/js/453.1fa62f00.chunk.js",
     "static/media/profile.png": "/Proyectos_Web/static/media/profile.b53cbe0aedcc90b83541.png",
     "static/media/saint_mary.png": "/Proyectos_Web/static/media/saint_mary.1606c1ce1c2442c74d2e.png",
     "static/media/CV_Carolina_TUP.pdf": "/Proyectos_Web/static/media/CV_Carolina_TUP.36be8dd0283edf64ed56.pdf",
+    "static/media/Certificado_PostgreSQL.pdf": "/Proyectos_Web/static/media/Certificado_PostgreSQL.46b43f73e6cd98d197ef.pdf",
     "static/media/comments-python.jpg": "/Proyectos_Web/static/media/comments-python.e179e83daf4e7a0e122c.jpg",
     "static/media/Saint-Mary.png": "/Proyectos_Web/static/media/Saint-Mary.42e8a9894a07516b1323.png",
     "static/media/2641048.gif": "/Proyectos_Web/static/media/2641048.e489e7bcf449096f672e.gif",
@@ -22,12 +23,12 @@
     "static/media/6073873.png": "/Proyectos_Web/static/media/6073873.5106bdf5095238450e60.png",
     "static/media/calculadora.png": "/Proyectos_Web/static/media/calculadora.540720b8d2106cb43869.png",
     "index.html": "/Proyectos_Web/index.html",
-    "main.e0e6477b.css.map": "/Proyectos_Web/static/css/main.e0e6477b.css.map",
-    "main.9034a913.js.map": "/Proyectos_Web/static/js/main.9034a913.js.map",
+    "main.d49b30fa.css.map": "/Proyectos_Web/static/css/main.d49b30fa.css.map",
+    "main.6b87078a.js.map": "/Proyectos_Web/static/js/main.6b87078a.js.map",
     "453.1fa62f00.chunk.js.map": "/Proyectos_Web/static/js/453.1fa62f00.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0e6477b.css",
-    "static/js/main.9034a913.js"
+    "static/css/main.d49b30fa.css",
+    "static/js/main.6b87078a.js"
   ]
 }
