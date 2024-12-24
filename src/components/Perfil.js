@@ -8,6 +8,7 @@ import cv from './pdf/CV_Carolina_TUP.pdf'
 import pythonCertificado from './pdf/Certificado_Python.pdf'
 import javaScriptCertificado from './pdf/Certificado_JavaScript.pdf'
 import dataScienceCertificado from './pdf/Certificado_Data_Science.pdf'
+import postgreSQLCertificado from './pdf/Certificado_PostgreSQL.pdf'
 
 const Perfil = () => (
   <section id="perfil">
@@ -52,16 +53,17 @@ const Perfil = () => (
 
       <h3>Cursos Complementarios</h3>
       <ul className="course-list">
+        <li><strong>Iniciación a la Programación con Python</strong> - Talento Tech </li>
         <li><strong>Full Stack Python</strong> – Codo a Codo <a href={pythonCertificado} download> <button class="purple-button">Descargar Certificado</button></a></li>
         <li><strong>Full Stack JavaScript</strong> – Codo a Codo <a href={javaScriptCertificado} download> <button class="purple-button">Descargar Certificado</button></a></li>
         <li><strong>Python para Data Science</strong> – Universidad Nacional de Hurlingham (colaboración con CETI) <a href={dataScienceCertificado} download> <button class="purple-button">Descargar Certificado</button></a></li>
-        <li><strong>PostgreSQL</strong> – Universidad Nacional de Hurlingham (colaboración con CETI, en curso)</li>
+        <li><strong>PostgreSQL</strong> – Universidad Nacional de Hurlingham (colaboración con CETI) <a href={postgreSQLCertificado} download> <button class="purple-button">Descargar Certificado</button></a></li>
       </ul>
       </div>
     </div>
   </section>
 
 
-);
+)
 
-export default Perfil;
+export default Perfil

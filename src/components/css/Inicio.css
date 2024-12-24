@@ -288,6 +288,7 @@
     font-size: 25px;
     line-height: 1.6;
     text-align: center;
+    max-width: 100%;
 }
 .purple-button {
   background-color: #b347e6;
@@ -346,21 +347,6 @@
     font-size: 1.1rem;
     margin-bottom: 10px;
     line-height: 1.6;
-  }
-
-  @media (max-width: 768px) {
-    /* En pantallas pequeñas, ajustamos los márgenes y el tamaño de la fuente */
-    #perfil h2 {
-      font-size: 2rem;
-    }
-  
-    #perfil p {
-      font-size: 1rem;
-    }
-  
-    #perfil ul li {
-      font-size: 1rem;
-    }
   }
 
   .education {
