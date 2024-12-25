@@ -1,6 +1,7 @@
 import React from 'react'
 import './css/Inicio.css'
 
+
 function Inicio() {
   return (
     <section id="inicio_header">
@@ -21,6 +22,7 @@ function Inicio() {
                 </div>
             </div>
     </section>
+    
   )
 }
 
