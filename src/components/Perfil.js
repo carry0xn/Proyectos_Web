@@ -21,7 +21,7 @@ const Perfil = () => (
           <p className="intro-text">
           Bienvenido a mi portafolio. Soy Carolina, estudiante de <strong>Licenciatura en Informática</strong> y 
           <strong> Técnica en Programación</strong> con experiencia en tecnologías como <strong>React, JavaScript</strong> 
-          y <strong>CSS</strong>. Tengo un alto nivel de inglés, adquirido a lo largo de varios años de estudio, y disfruto 
+          y <strong>Node JS</strong>. Tengo un alto nivel de inglés, adquirido a lo largo de varios años de estudio, y disfruto 
           de asumir nuevos desafíos en cada proyecto. Si estás buscando a alguien comprometido, proactivo y con habilidades técnicas y lingüísticas, 
           ¡has llegado al lugar indicado!</p>
           <p className="location">
