@@ -1,0 +1,86 @@
+{   
+    "header": {
+      "sobreMi": "About Me",
+      "habilidades": "Skills",
+      "proyectos": "Projects",
+      "contacto": "Contact"
+    },
+    "saludo":{
+      "saludo": "Hello",
+      "saludo1": "Welcome",
+      "saludo2": "Enjoy",
+      "saludo3": "People",
+      "saludo4": "Everyone"
+    },
+    "perfil": {
+      "intro": "Welcome to my portfolio. I am Carolina, a <strong>Junior Full-Stack Web Developer</strong> with experience in <strong>React, JavaScript</strong>, and <strong>Node.js</strong>. I am currently studying <strong>Computer Science</strong> and I am a <strong>Programming Technician</strong>. I have a high level of English, acquired over several years of study, and I enjoy taking on new challenges in every project. If you are looking for someone committed, proactive, and with technical and linguistic skills, you have come to the right place!",
+      "location": "Buenos Aires, Argentina",
+      "downloadCVES": "Download CV in Spanish",
+      "downloadCVEN": "Download CV in English"
+    },
+    "education": {
+      "title": "Academic Background",
+      "degree1": "<strong>Programming Technician</strong>, National University of Hurlingham",
+      "degree2": "<strong>Computer Science</strong> (ongoing), National University of Hurlingham",
+      "degree3": "<strong>English</strong> (ongoing), Saint Mary: School of English (First Certificated Level: C1)"
+    },
+    "courses": {
+      "title": "Complementary Courses",
+      "python": "<strong>Introduction to Programming with Python</strong> - Talento Tech",
+      "fullStackPython": "<strong>Full Stack Python</strong> – Codo a Codo",
+      "fullStackJS": "<strong>Full Stack JavaScript</strong> – Codo a Codo",
+      "dataScience": "<strong>Python for Data Science</strong> – National University of Hurlingham (collaboration with CETI)",
+      "postgreSQL": "<strong>PostgreSQL</strong> – National University of Hurlingham (collaboration with CETI)",
+      "downloadCert": "Download Certificate"
+    },
+    "experience":{
+        "languages": "Languages",
+        "technology": "Technology and Tools"
+    },
+    "proyectos": {
+        "titulo": "Projects",
+        "python": {
+          "titulo": "Python Projects",
+          "repositorio": "Python Repository"
+        },
+        "calculadora": {
+          "titulo": "Price Calculator",
+          "repositorio": "Web Repository"
+        },
+        "biblioteca": {
+          "titulo": "Saint Mary Library",
+          "repositorio": "Saint Mary Repository"
+        },
+        "web": {
+          "titulo": "Web Projects",
+          "repositorio": "Web Repository"
+        },
+        "proyectoWeb": {
+          "titulo": "Web Project",
+          "descripcion": "It was done in a group",
+          "repositorio": "Web Repository"
+        },
+        "sql": {
+          "titulo": "SQL Projects",
+          "repositorio": "SQL Repository"
+        },
+        "dataScience": {
+          "titulo": "Data Science Projects",
+          "repositorio": "Data Science Repository"
+        },
+        "promocional": {
+          "titulo": "Saint Mary Promotional Website",
+          "repositorio": "Saint Mary Repository"
+        }
+      },
+        "formulario": {
+          "hablemos": "Let's talk!",
+          "nombre": "Your Name",
+          "correo": "Your Email",
+          "mensaje": "Your Message",
+          "enviar": "Send",
+          "mensajeExitoso": "Message sent successfully!",
+          "mensajeNoExitoso": "Error: the message was not sent"
+        }
+  }
+  

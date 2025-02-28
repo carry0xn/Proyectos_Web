@@ -1,0 +1,86 @@
+{   
+    "header": {
+    "sobreMi": "Sobre Mi",
+    "habilidades": "Habilidades",
+    "proyectos": "Proyectos",
+    "contacto": "Contacto"
+    },
+    "saludo":{
+      "saludo": "Hola",
+      "saludo1": "Bienvenidos",
+      "saludo2": "Disfruten",
+      "saludo3": "Gente",
+      "saludo4": "A Todos"
+    },
+    "perfil": {
+      "intro": "Bienvenido a mi portafolio. Soy Carolina, una <strong>Desarrolladora Web Full-Stack Jr.</strong> con experiencia en <strong>React, JavaScript</strong> y <strong>Node.js</strong>. Actualmente estudio <strong>Licenciatura en Informática</strong> y soy <strong>Técnica Universitaria en Programación</strong>. Tengo un alto nivel de inglés, adquirido tras años de estudio, y disfruto afrontar nuevos desafíos en cada proyecto. Si buscas a alguien comprometido, proactivo y con habilidades técnicas y lingüísticas, ¡llegaste al lugar indicado!",
+      "location": "Buenos Aires, Argentina",
+      "downloadCVES": "Descargar CV en Español",
+      "downloadCVEN": "Descargar CV en Inglés"
+    },
+    "education": {
+      "title": "Formación Académica",
+      "degree1": "<strong>Técnica Universitaria en Programación</strong>, Universidad Nacional de Hurlingham",
+      "degree2": "<strong>Licenciatura en Informática</strong> (en curso), Universidad Nacional de Hurlingham",
+      "degree3": "<strong>Inglés</strong> (en curso), Santa Maria: Escuela de Inglés (Nivel First Certificated: C1)"
+    },
+    "courses": {
+      "title": "Cursos Complementarios",
+      "python": "<strong>Introducción a la Programación con Python</strong> - Talento Tech",
+      "fullStackPython": "<strong>Full Stack Python</strong> – Codo a Codo",
+      "fullStackJS": "<strong>Full Stack JavaScript</strong> – Codo a Codo",
+      "dataScience": "<strong>Python para Ciencia de Datos</strong> – Universidad Nacional de Hurlingham (colaboración con CETI)",
+      "postgreSQL": "<strong>PostgreSQL</strong> – Universidad Nacional de Hurlingham (colaboración con CETI)",
+      "downloadCert": "Descargar Certificado"
+    },
+    "experience":{
+        "languages": "Lenguajes",
+        "technology": "Tecnologias y Herramientas"
+    },
+    "proyectos": {
+        "titulo": "Proyectos",
+        "python": {
+          "titulo": "Proyectos Python",
+          "repositorio": "Repositorio Python"
+        },
+        "calculadora": {
+          "titulo": "Calculadora de Precio",
+          "repositorio": "Repositorio Web"
+        },
+        "biblioteca": {
+          "titulo": "Biblioteca de Saint Mary",
+          "repositorio": "Repositorio Saint Mary"
+        },
+        "web": {
+          "titulo": "Proyectos Web",
+          "repositorio": "Repositorio Web"
+        },
+        "proyectoWeb": {
+          "titulo": "Proyecto Web",
+          "descripcion": "Fue realizado en grupo",
+          "repositorio": "Repositorio Web"
+        },
+        "sql": {
+          "titulo": "Proyectos SQL",
+          "repositorio": "Repositorio SQL"
+        },
+        "dataScience": {
+          "titulo": "Proyectos de Data Science",
+          "repositorio": "Repositorio Data Science"
+        },
+        "promocional": {
+          "titulo": "Website Promocional de Saint Mary",
+          "repositorio": "Repositorio de Saint Mary"
+        }
+      },
+        "formulario": {
+          "hablemos": "¡Hablemos!",
+          "nombre": "Tu Nombre",
+          "correo": "Tu Correo",
+          "mensaje": "Tu Mensaje",
+          "enviar": "Enviar",
+          "mensajeExitoso": "¡Mensaje enviado con éxito!",
+          "mensajeNoExitoso": "Error: el mensaje no fue enviado"
+        }
+  }
+  
