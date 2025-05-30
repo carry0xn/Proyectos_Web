@@ -39,10 +39,6 @@
     },
     "proyectos": {
         "titulo": "Projects",
-        "python": {
-          "titulo": "Python Projects",
-          "repositorio": "Python Repository"
-        },
         "calculadora": {
           "titulo": "Price Calculator",
           "repositorio": "Web Repository"
@@ -59,10 +55,6 @@
           "titulo": "Web Project",
           "descripcion": "It was done in a group",
           "repositorio": "Web Repository"
-        },
-        "sql": {
-          "titulo": "SQL Projects",
-          "repositorio": "SQL Repository"
         },
         "dataScience": {
           "titulo": "Data Science Projects",
