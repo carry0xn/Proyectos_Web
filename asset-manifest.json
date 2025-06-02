@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Proyectos_Web/static/css/main.3c20f9c3.css",
-    "main.js": "/Proyectos_Web/static/js/main.bc0b7de7.js",
+    "main.js": "/Proyectos_Web/static/js/main.8f4a0454.js",
     "static/js/453.1fa62f00.chunk.js": "/Proyectos_Web/static/js/453.1fa62f00.chunk.js",
     "static/media/profile.png": "/Proyectos_Web/static/media/profile.b53cbe0aedcc90b83541.png",
     "static/media/saint_mary.png": "/Proyectos_Web/static/media/saint_mary.1606c1ce1c2442c74d2e.png",
     "static/media/Captura de pantalla (154).png": "/Proyectos_Web/static/media/Captura de pantalla (154).7d56917fcebb1986a09c.png",
     "static/media/Saint-Mary.png": "/Proyectos_Web/static/media/Saint-Mary.42e8a9894a07516b1323.png",
     "static/media/2641048.gif": "/Proyectos_Web/static/media/2641048.e489e7bcf449096f672e.gif",
-    "static/media/CV_Carolina_Eng.pdf": "/Proyectos_Web/static/media/CV_Carolina_Eng.327e51c65cfee7cdea67.pdf",
     "static/media/CV_Carolina_Esp.pdf": "/Proyectos_Web/static/media/CV_Carolina_Esp.0b59fc8a19197eb150bc.pdf",
+    "static/media/CV_Carolina_Eng.pdf": "/Proyectos_Web/static/media/CV_Carolina_Eng.fb80b0061bbb16f3e78a.pdf",
     "static/media/dataScience.png": "/Proyectos_Web/static/media/dataScience.1962ba3703dad6b5d5a7.png",
     "static/media/desarrollo-web-completo-con-html5-css3-js-php-y-mysql.png": "/Proyectos_Web/static/media/desarrollo-web-completo-con-html5-css3-js-php-y-mysql.cc270af58d59b16142f6.png",
     "static/media/6073873.png": "/Proyectos_Web/static/media/6073873.5106bdf5095238450e60.png",
@@ -18,11 +18,11 @@
     "index.html": "/Proyectos_Web/index.html",
     "static/media/Flag_of_the_United_Kingdom.svg": "/Proyectos_Web/static/media/Flag_of_the_United_Kingdom.5aa2f382eb186965d0d01427f2b1c608.svg",
     "main.3c20f9c3.css.map": "/Proyectos_Web/static/css/main.3c20f9c3.css.map",
-    "main.bc0b7de7.js.map": "/Proyectos_Web/static/js/main.bc0b7de7.js.map",
+    "main.8f4a0454.js.map": "/Proyectos_Web/static/js/main.8f4a0454.js.map",
     "453.1fa62f00.chunk.js.map": "/Proyectos_Web/static/js/453.1fa62f00.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3c20f9c3.css",
-    "static/js/main.bc0b7de7.js"
+    "static/js/main.8f4a0454.js"
   ]
 }
