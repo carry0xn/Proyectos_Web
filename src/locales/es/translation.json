@@ -66,8 +66,8 @@
         },
         "plataform": {
           "titulo":"Plataforma Saint Mary",
-          "repositorio":"Repositorio de Plataforma Saint Mary Repository Frontend",
-          "repositorio2":"Repositorio de Plataforma Saint Mary Repository Backend"
+          "repositorio":"Repositorio de Plataforma Frontend",
+          "repositorio2":"Repositorio de Plataforma Backend"
         }
       },
         "formulario": {
