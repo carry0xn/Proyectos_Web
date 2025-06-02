@@ -63,6 +63,11 @@
         "promocional": {
           "titulo": "Saint Mary Promotional Website",
           "repositorio": "Saint Mary Repository"
+        },
+        "plataform": {
+          "titulo":"Saint Mary Plataform",
+          "repositorio":"Saint Mary Plataform Repository Frontend",
+          "repositorio2":"Saint Mary Plataform Repository Backend"
         }
       },
         "formulario": {

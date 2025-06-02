@@ -1,16 +1,14 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import python from './img/comments-python.jpg';
-import library from './img/saint_mary.png';
-import calculadora from './img/calculadora.png';
-import saintMary from './img/Saint-Mary.png';
-import javaScript from './img/javascript-code.jpg';
-import proyectWeb from './img/desarrollo-web-completo-con-html5-css3-js-php-y-mysql.png';
-import sql from './img/para-que-sirve-lenguaje-sql.jpg';
-import dataScience from './img/dataScience.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import './css/Experiencia.css';
+import React from 'react'
+import { useTranslation } from 'react-i18next'
+import library from './img/saint_mary.png'
+import calculadora from './img/calculadora.png'
+import saintMary from './img/Saint-Mary.png'
+import proyectWeb from './img/desarrollo-web-completo-con-html5-css3-js-php-y-mysql.png'
+import dataScience from './img/dataScience.png'
+import saintmaryplataform from './img/Captura de pantalla (154).png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import './css/Experiencia.css'
 
 const Proyectos = () => {
   const { t, i18n } = useTranslation();
@@ -47,6 +45,7 @@ const Proyectos = () => {
                     <FontAwesomeIcon icon={faGithub} /> {t('proyectos.calculadora.repositorio')}
                   </a>
                 </div>
+                <a href="https://carry0xn.github.io/Negocio-Empanadas/">Web</a>
               </div>
             </div>
           </div>
@@ -73,38 +72,13 @@ const Proyectos = () => {
                     <FontAwesomeIcon icon={faGithub} /> {t('proyectos.biblioteca.repositorio')}
                   </a>
                 </div>
+                <a href='https://carry0xn.github.io/Santa-Maria/'>Web</a>
               </div>
             </div>
           </div>
         </div>
 
         {/* Proyecto Web */}
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <div className="imgBx">
-                <img src={javaScript} alt="javaScript-img" />
-              </div>
-              <div className="content">
-                <div>
-                  <h2>{t('proyectos.web.titulo')}</h2>
-                </div>
-              </div>
-            </div>
-            <div className="flip-card-back">
-              <div className="content">
-                <div>
-                  <h2>{t('proyectos.web.titulo')}</h2>
-                  <a href="https://github.com/carry0xn/web-development" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faGithub} /> {t('proyectos.web.repositorio')}
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Proyecto Web Completo */}
         <div className="flip-card">
           <div className="flip-card-inner">
             <div className="flip-card-front">
@@ -162,7 +136,7 @@ const Proyectos = () => {
           <div className="flip-card-inner">
             <div className="flip-card-front">
               <div className="imgBx">
-                <img src={saintMary} alt="calculadora-img" />
+                <img src={saintMary} alt="saintmary-img" />
               </div>
               <div className="content">
                 <div>
@@ -178,11 +152,44 @@ const Proyectos = () => {
                     <FontAwesomeIcon icon={faGithub} /> {t('proyectos.promocional.repositorio')}
                   </a>
                 </div>
+                <a href="https://carry0xn.github.io/Saint-Mary/">Web</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Proyecto Plataform */}
+        <div className="flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
+              <div className="imgBx">
+                <img src={saintmaryplataform} alt="plataform-img" />
+              </div>
+              <div className="content">
+                <div>
+                  <h2>{t('proyectos.plataform.titulo')}</h2>
+                </div>
+              </div>
+            </div>
+            <div className="flip-card-back">
+              <div className="content">
+                <div>
+                  <h2>{t('proyectos.plataform.titulo')}</h2>
+                  <a href="https://github.com/carry0xn/saint-mary-frontend" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faGithub} /> {t('proyectos.plataform.repositorio')}
+                  </a>
+                  <a href="https://github.com/carry0xn/saint-mary-backend" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faGithub} /> {t('proyectos.plataform.repositorio2')}
+                  </a>
+                </div>
+                <a href="https://carry0xn.github.io/saint-mary-frontend/">Web</a>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      
     </section>
   );
 };

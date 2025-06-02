@@ -1,7 +1,7 @@
 import React from 'react'
 import './css/Experiencia.css'
 import { FaJs, FaPython, FaHtml5, FaCss3Alt, FaDatabase, FaReact, FaNodeJs, FaGit, FaGithub, FaCode } from "react-icons/fa";
-import { SiPostgresql, SiBootstrap, SiPostman } from "react-icons/si";
+import { SiBootstrap, SiPostman, SiSequelize, SiSqlite } from "react-icons/si";
 import { useTranslation } from 'react-i18next'
 import '../i18n'
 
@@ -42,7 +42,8 @@ const Experiencia = () => {
         <ul>
           <li><FaGit /> Git</li>
           <li><FaGithub /> GitHub</li>
-          <li><SiPostgresql /> PostgreSQL</li>
+          <li><SiSqlite /> Sqlite</li>
+          <li><SiSequelize /> Sequelize</li>
           <li><SiPostman /> Postman</li>
           <li><FaCode /> Visual Studio Code</li>
         </ul>
