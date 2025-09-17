@@ -37,39 +37,36 @@
         "languages": "Languages",
         "technology": "Technology and Tools"
     },
-    "proyectos": {
-        "titulo": "Projects",
-        "calculadora": {
-          "titulo": "Price Calculator",
-          "repositorio": "Web Repository"
-        },
-        "biblioteca": {
-          "titulo": "Saint Mary Library",
-          "repositorio": "Saint Mary Repository"
-        },
-        "web": {
-          "titulo": "Web Projects",
-          "repositorio": "Web Repository"
-        },
-        "proyectoWeb": {
-          "titulo": "Web Project",
-          "descripcion": "It was done in a group",
-          "repositorio": "Web Repository"
-        },
-        "dataScience": {
-          "titulo": "Data Science Projects",
-          "repositorio": "Data Science Repository"
-        },
-        "promocional": {
-          "titulo": "Saint Mary Promotional Website",
-          "repositorio": "Saint Mary Repository"
-        },
-        "plataform": {
-          "titulo":"Saint Mary Plataform",
-          "repositorio":"Saint Mary Plataform Repository Frontend",
-          "repositorio2":"Saint Mary Plataform Repository Backend"
-        }
+    "repos": {
+      "calculadora": {
+        "titulo": "Price Calculator",
+        "repositorio": "Web Repository"
       },
+      "biblioteca": {
+        "titulo": "Saint Mary Library",
+        "repositorio": "Saint Mary Repository"
+      },
+      "web": {
+        "titulo": "Web Projects",
+        "repositorio": "Web Repository"
+      },
+      "dataScience": {
+        "titulo": "Data Science Projects",
+        "repositorio": "Data Science Repository"
+      },
+      "promocional": {
+        "titulo": "Saint Mary Promotional Website",
+        "repositorio": "Saint Mary Repository"
+      },
+      "plataform": {
+        "titulo":"Saint Mary Plataform Frontend",
+        "repositorio":"Saint Mary Plataform Repository "
+      },
+      "plataform_2": {
+        "titulo": "Saint Mary Plataform Backend",
+        "repositorio": "Saint Mary Plataform Repository"
+      }
+    },
         "formulario": {
           "hablemos": "Let's talk!",
           "nombre": "Your Name",

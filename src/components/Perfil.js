@@ -9,14 +9,14 @@ import { useTranslation } from 'react-i18next'
 import '../i18n'
 
 const Perfil = () => {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation()
 
   React.useEffect(() => {
-    const savedLang = localStorage.getItem('language');
+    const savedLang = localStorage.getItem('language')
     if (savedLang) {
-      i18n.changeLanguage(savedLang);
+      i18n.changeLanguage(savedLang)
     }
-  }, [i18n]);
+  }, [i18n])
 
   return (
     <section id="perfil">
@@ -62,7 +62,7 @@ const Perfil = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Perfil;
+export default Perfil

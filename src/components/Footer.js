@@ -15,7 +15,6 @@ function Footer() {
             <li><a href="https://wa.me/541169512534?text=Hola%20Como%20Estas?%20" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faWhatsapp} /></a></li>
         </ul>
     </footer>
-
   )
 }
 

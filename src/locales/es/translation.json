@@ -37,39 +37,36 @@
         "languages": "Lenguajes",
         "technology": "Tecnologias y Herramientas"
     },
-    "proyectos": {
-        "titulo": "Proyectos",
-        "calculadora": {
-          "titulo": "Calculadora de Precio",
-          "repositorio": "Repositorio Web"
-        },
-        "biblioteca": {
-          "titulo": "Biblioteca de Saint Mary",
-          "repositorio": "Repositorio Saint Mary"
-        },
-        "web": {
-          "titulo": "Proyectos Web",
-          "repositorio": "Repositorio Web"
-        },
-        "proyectoWeb": {
-          "titulo": "Proyecto Web",
-          "descripcion": "Fue realizado en grupo",
-          "repositorio": "Repositorio Web"
-        },
-        "dataScience": {
-          "titulo": "Proyectos de Data Science",
-          "repositorio": "Repositorio Data Science"
-        },
-        "promocional": {
-          "titulo": "Website Promocional de Saint Mary",
-          "repositorio": "Repositorio de Saint Mary"
-        },
-        "plataform": {
-          "titulo":"Plataforma Saint Mary",
-          "repositorio":"Repositorio de Plataforma Frontend",
-          "repositorio2":"Repositorio de Plataforma Backend"
-        }
+    "repos": {
+      "calculadora": {
+        "titulo": "Calculadora de Precios",
+        "repositorio": "Repositorio Web"
       },
+      "biblioteca": {
+        "titulo": "Biblioteca Saint Mary",
+        "repositorio": "Saint Mary Repositorio"
+      },
+      "web": {
+        "titulo": "Proyectos Web",
+        "repositorio": "Repositorio Web"
+      },
+      "dataScience": {
+        "titulo": "Projectos Ciencia de Datos",
+        "repositorio": "Repositorio Ciencia de Datos"
+      },
+      "promocional": {
+        "titulo": "Saint Mary Pagina Promocional",
+        "repositorio": "Saint Mary Repositorio"
+      },
+      "plataform": {
+        "titulo":"Saint Mary Plataforma Frontend",
+        "repositorio":"Repositorio Saint Mary Plataforma"
+      },
+      "plataform_2": {
+        "titulo": "Saint Mary Plataforma Backend",
+        "repositorio": "Repositorio Saint Mary Plataforma"
+      }
+    },
         "formulario": {
           "hablemos": "¡Hablemos!",
           "nombre": "Tu Nombre",

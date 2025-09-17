@@ -4,18 +4,17 @@ import './css/Header.css'
 import { useTranslation } from 'react-i18next'
 import '../i18n'
 
-
 const Formulario = () => {
     const [mensaje, setMensaje] = useState('')
     const formRef = useRef()
-      const { t, i18n } = useTranslation();
+      const { t, i18n } = useTranslation()
 
       React.useEffect(() => {
-        const savedLang = localStorage.getItem('language');
+        const savedLang = localStorage.getItem('language')
         if (savedLang) {
-            i18n.changeLanguage(savedLang);
+            i18n.changeLanguage(savedLang)
           }
-      }, [i18n]);
+      }, [i18n])
   
     const sendEmail = (e) => {
       e.preventDefault()
@@ -30,7 +29,6 @@ const Formulario = () => {
         console.log(error)
       })
     }
-
     return (
         <section id='formulario'>
           <div className='form'>
@@ -44,7 +42,6 @@ const Formulario = () => {
             {mensaje && <p>{mensaje}</p>}
           </div>
         </section>
-      );
+      )
     }    
-
 export default Formulario

@@ -1,11 +1,12 @@
-import React from 'react';
-import Perfil from './components/Perfil';
-import Experiencia from './components/Experiencia';
-import Proyectos from './components/Proyectos';
-import Inicio from './components/Inicio';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Formulario from './components/Formulario';
+import React from 'react'
+import Perfil from './components/Perfil'
+import Experiencia from './components/Experiencia'
+import Inicio from './components/Inicio'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import GithubRepos from './components/GithubRepos'
+import Formulario from './components/Formulario'
+
 
 function App() {
   return (
@@ -14,11 +15,11 @@ function App() {
       <Inicio />
       <Perfil />
       <Experiencia />
-      <Proyectos />
+      <GithubRepos />
       <Formulario /> 
       <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

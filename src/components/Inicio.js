@@ -4,14 +4,14 @@ import { useTranslation } from 'react-i18next'
 import '../i18n'
 
 const Inicio = () => {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation()
 
   React.useEffect(() => {
-    const savedLang = localStorage.getItem('language');
+    const savedLang = localStorage.getItem('language')
     if (savedLang) {
-      i18n.changeLanguage(savedLang);
+      i18n.changeLanguage(savedLang)
     }
-  }, [i18n]);
+  }, [i18n])
   return (
     <section id="inicio_header">
       <div id="inicio_animacion">
@@ -20,7 +20,6 @@ const Inicio = () => {
                         <p class="saludo_container_text">
                             {t('saludo.saludo')}
                         </p>
-        
                         <ul class="saludo_container_list">
                             <li class="saludo_container_list_item">{t('saludo.saludo1')}</li>
                             <li class="saludo_container_list_item">{t('saludo.saludo2')}</li>
@@ -31,7 +30,6 @@ const Inicio = () => {
                 </div>
             </div>
     </section>
-    
   )
 }
 
