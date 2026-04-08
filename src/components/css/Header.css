@@ -1,109 +1,155 @@
+/* ====================================
+   🧭 HEADER COMPONENT
+   ================================= */
+
+/* 📋 HEADER MAIN */
 header {
-  background-color: #d5a6da;
-  padding: 15px 0;
+  background-color: var(--color-background-light);
+  padding: var(--spacing-md) 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: var(--max-width-content);
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 var(--spacing-lg);
 }
 
+/* 🏷️ LOGO */
 .header-logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #000000;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
 }
 
+/* 🧭 NAVIGATION */
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: var(--spacing-lg);
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #000000;
-  font-weight: 500;
-  font-size: 1.1rem;
+  color: var(--color-black);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-lg);
+  transition: color var(--transition-normal);
+  position: relative;
+  padding: var(--spacing-sm) 0;
 }
 
 .nav-links a:hover {
-  color: #b700ff;
-  transition: color 0.3s ease;
+  color: var(--color-primary);
 }
 
-/* Menú responsive */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: width var(--transition-normal);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* 📱 MOBILE MENU TOGGLE */
 .menu-toggle {
   display: none;
-  font-size: 1.5rem;
+  font-size: var(--font-size-xl);
   background-color: transparent;
   border: none;
-  color: #000000;
+  color: var(--color-black);
   cursor: pointer;
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  transition: background-color var(--transition-normal);
 }
 
-/* Adaptar el menú en pantallas pequeñas */
+.menu-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* 🌐 LANGUAGE FLAGS */
+.language-flags {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.language-flags img {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  border-radius: var(--border-radius-sm);
+  transition: transform var(--transition-normal);
+}
+
+.language-flags img:hover {
+  transform: scale(1.1);
+}
+
+/* 📱 RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   .header-container {
-      flex-direction: column;
-      align-items: flex-start;
+    padding: 0 var(--spacing-md);
+  }
+
+  .menu-toggle {
+    display: block;
+    order: 2;
+  }
+
+  nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-background-light);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-normal);
+  }
+
+  nav.menu-active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 
   nav ul {
-      flex-direction: column;
-      gap: 10px;
-      display: none; /* Ocultar el menú inicialmente */
-      width: 100%;
-      margin-top: 10px;
+    flex-direction: column;
+    padding: var(--spacing-lg);
+    gap: var(--spacing-lg);
   }
 
-  /* Mostrar el botón de menú */
-  .menu-toggle {
-      display: block;
+  .nav-links a {
+    display: block;
+    padding: var(--spacing-md) 0;
+    font-size: var(--font-size-base);
   }
 
-  /* Mostrar el menú cuando esté activo */
-  .menu-active ul {
-      display: flex;
+  .language-flags {
+    order: 1;
+    gap: var(--spacing-sm);
   }
-}
 
-  
-  /*Formulario*/
-
-.form {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff; 
-  padding: 40px;
-  border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  max-width: 700px; 
-  margin: 20px auto; 
-  gap: 15px; 
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #820086;
-  border-radius: 5px;
-  margin-bottom: 15px;
-}
-
-button {
-  background-color: #9100b5; 
-  color: #000000; 
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
+  .language-flags img {
+    width: 25px;
+  }
 }

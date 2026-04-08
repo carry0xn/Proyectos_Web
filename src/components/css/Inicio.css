@@ -1,6 +1,8 @@
-/*Estilos header del inicio*/
-@import url(./Perfil.css);
+/* ====================================
+   🏠 HERO/INICIO COMPONENT
+   ================================= */
 
+/* 🎬 HERO SECTION */
 #inicio_header{
     max-width: 100%;
     height: calc(100vh - 80px);
@@ -147,12 +149,129 @@
 		transform: translatey(0px);
 	}
 }
-/*FOOTER*/
-footer .contact-info{
-  margin: 0;
-  padding: 20px;
-  justify-content: center;
+
+/* 🎨 HERO OVERLAY */
+#inicio_header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(213, 166, 218, 0.3) 0%,
+    rgba(233, 176, 255, 0.3) 100%
+  );
+  z-index: 1;
+}
+
+/* 🎯 CTA SECTION */
+.hero-cta {
+  position: absolute;
+  bottom: var(--spacing-xxxl);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.scroll-indicator {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
-  background-color: #e9b0ff;
+  gap: var(--spacing-md);
+  color: var(--color-gray-dark);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-medium);
+  animation: bounce 2s infinite;
+}
+
+.scroll-arrow {
+  font-size: var(--font-size-2xl);
+  color: var(--color-primary-dark);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* 📱 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  #inicio_header {
+    height: calc(100vh - var(--header-height));
+  }
+
+  .saludo {
+    font-size: var(--font-size-3xl);
+    padding: 0 var(--spacing-lg);
+  }
+
+  .saludo_container {
+    height: 40px;
+    padding: 0 var(--spacing-xl);
+  }
+
+  .saludo_container:before,
+  .saludo_container:after {
+    font-size: calc(var(--font-size-3xl) + 0.5rem);
+  }
+
+  .hero-cta {
+    bottom: var(--spacing-xl);
+  }
+}
+
+@media (max-width: 480px) {
+  .saludo {
+    font-size: var(--font-size-2xl);
+    padding: 0 var(--spacing-md);
+  }
+
+  .saludo_container {
+    height: 32px;
+    padding: 0 var(--spacing-lg);
+  }
+
+  .saludo_container:before,
+  .saludo_container:after {
+    font-size: calc(var(--font-size-2xl) + 0.5rem);
+  }
+
+  .scroll-indicator {
+    font-size: var(--font-size-sm);
+  }
+
+  .scroll-arrow {
+    font-size: var(--font-size-xl);
+  }
+}
+
+/* 🌟 ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+  .saludo_container:before,
+  .saludo_container:after,
+  .saludo_container_text,
+  .scroll-indicator {
+    animation: none;
+  }
+}
+
+/* 🎨 DARK MODE SUPPORT */
+@media (prefers-color-scheme: dark) {
+  .saludo {
+    color: var(--color-white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  .scroll-indicator {
+    color: var(--color-white);
+  }
 }

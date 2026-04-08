@@ -36,6 +36,7 @@ const Header = () => {
         <nav className={menuOpen ? 'menu-active' : ''}>
           <ul className="nav-links">
           <li><a href="#perfil">{t('header.sobreMi')}</a></li>
+            <li><a href="#timeline">{t('header.formacion')}</a></li>
             <li><a href="#skills-section">{t('header.habilidades')}</a></li>
             <li><a href="#proyectos">{t('header.proyectos')}</a></li>
             <li><a href="#formulario">{t('header.contacto')}</a></li>

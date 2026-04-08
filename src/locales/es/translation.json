@@ -1,9 +1,10 @@
-{   
+{
     "header": {
-    "sobreMi": "Sobre Mi",
-    "habilidades": "Habilidades",
-    "proyectos": "Proyectos",
-    "contacto": "Contacto"
+      "sobreMi": "Sobre Mí",
+      "formacion": "Formación",
+      "habilidades": "Habilidades",
+      "proyectos": "Proyectos",
+      "contacto": "Contacto"
     },
     "saludo":{
       "saludo": "Hola",
@@ -13,16 +14,19 @@
       "saludo4": "A Todos"
     },
     "perfil": {
-      "intro": "Bienvenido a mi portafolio. Soy Carolina, una <strong>Desarrolladora Web Full-Stack Jr.</strong> con experiencia en <strong>React, JavaScript</strong> y <strong>Node.js</strong>. Actualmente estudio <strong>Licenciatura en Informática</strong> y soy <strong>Técnica Universitaria en Programación</strong>. Tengo un alto nivel de inglés, adquirido tras años de estudio, y disfruto afrontar nuevos desafíos en cada proyecto. Si buscas a alguien comprometido, proactivo y con habilidades técnicas y lingüísticas, ¡llegaste al lugar indicado!",
+      "title": "Sobre Mí",
+      "intro": "Soy una <strong>Desarrolladora Full-Stack Junior</strong> apasionada por crear soluciones web eficientes usando <strong>React, JavaScript y Node.js</strong>. Actualmente estudio <strong>Licenciatura en Informática</strong> y soy <strong>Técnica Universitaria en Programación</strong>. Con dominio avanzado del inglés y compromiso con el aprendizaje continuo, aporto experiencia técnica y habilidades comunicativas sólidas a cada proyecto.",
       "location": "Buenos Aires, Argentina",
-      "downloadCVES": "Descargar CV en Español",
-      "downloadCVEN": "Descargar CV en Inglés"
+      "locationIcon": "📍",
+      "downloadCVES": "Descargar CV (Español)",
+      "downloadCVEN": "Descargar CV (Inglés)",
+      "altText": "Foto profesional de Carolina"
     },
     "education": {
       "title": "Formación Académica",
       "degree1": "<strong>Técnica Universitaria en Programación</strong>, Universidad Nacional de Hurlingham",
       "degree2": "<strong>Licenciatura en Informática</strong> (en curso), Universidad Nacional de Hurlingham",
-      "degree3": "<strong>Inglés</strong> (en curso), Santa Maria: Escuela de Inglés (Nivel First Certificated: C1)"
+      "degree3": "<strong>Inglés</strong> (en curso), Churchull House: School of English Language (Nivel: C1)"
     },
     "courses": {
       "title": "Cursos Complementarios",
@@ -33,48 +37,178 @@
       "postgreSQL": "<strong>PostgreSQL</strong> – Universidad Nacional de Hurlingham (colaboración con CETI)",
       "downloadCert": "Descargar Certificado"
     },
+    "timeline": {
+      "title": "Formación y Certificaciones",
+      "subtitle": "Mi trayectoria académica y profesional",
+      "items": [
+        {
+          "id": "licenciatura",
+          "type": "education",
+          "title": "Licenciatura en Informática",
+          "institution": "Universidad Nacional de Hurlingham",
+          "period": "2020 - Presente",
+          "status": "in-progress",
+          "description": "Carrera de grado enfocada en desarrollo de software, bases de datos y arquitectura de sistemas.",
+          "icon": "🎓",
+          "certUrl": null
+        },
+        {
+          "id": "tecnica",
+          "type": "education",
+          "title": "Técnica Universitaria en Programación",
+          "institution": "Universidad Nacional de Hurlingham",
+          "period": "2020 - 2024",
+          "status": "completed",
+          "description": "Formación técnica en programación, algoritmos y estructuras de datos.",
+          "icon": "💻",
+          "certUrl": "tecnica-cert.pdf"
+        },
+        {
+          "id": "english",
+          "type": "education",
+          "title": "Inglés - First (B2)",
+          "institution": "Saint Mary",
+          "period": "2018 - Presente",
+          "status": "in-progress",
+          "description": "Estudios de inglés avanzado, actualmente cursando el nivel First (B2) para certificación internacional.",
+          "icon": "🌍",
+          "certUrl": null
+        },
+        {
+          "id": "churchull",
+          "type": "course",
+          "title": "Certificación de Inglés C1",
+          "institution": "Churchull House: School of English Language",
+          "period": "Marzo 2026",
+          "status": "completed",
+          "description": "Curso intensivo de un mes en Inglaterra con certificación de nivel C1 (Avanzado).",
+          "icon": "🇬🇧",
+          "certUrl": "churchull-c1-cert.pdf"
+        },
+        {
+          "id": "postgresql",
+          "type": "course",
+          "title": "PostgreSQL",
+          "institution": "Universidad Nacional de Hurlingham (colaboración con CETI)",
+          "period": "Octubre 2024",
+          "status": "completed",
+          "description": "Administración de bases de datos relacionales, consultas avanzadas y optimización.",
+          "icon": "🐘",
+          "certUrl": "postgresql-cert.pdf"
+        },
+        {
+          "id": "fullstackjs",
+          "type": "course",
+          "title": "Full Stack JavaScript",
+          "institution": "Codo a Codo",
+          "period": "Julio 2023",
+          "status": "completed",
+          "description": "Desarrollo web completo con JavaScript, Node.js, React y bases de datos.",
+          "icon": "⚡",
+          "certUrl": "fullstack-js-cert.pdf"
+        },
+        {
+          "id": "datascience",
+          "type": "course",
+          "title": "Python para Ciencia de Datos",
+          "institution": "Universidad Nacional de Hurlingham (colaboración con CETI)",
+          "period": "Abril 2023",
+          "status": "completed",
+          "description": "Análisis de datos, visualización y machine learning con Python, Pandas y Matplotlib.",
+          "icon": "📊",
+          "certUrl": "data-science-cert.pdf"
+        },
+        {
+          "id": "python",
+          "type": "course",
+          "title": "Introducción a la Programación con Python",
+          "institution": "Talento Tech",
+          "period": "Diciembre 2022",
+          "status": "completed",
+          "description": "Fundamentos de programación, sintaxis de Python y resolución de problemas.",
+          "icon": "🐍",
+          "certUrl": "python-intro-cert.pdf"
+        }
+      ],
+      "statusLabels": {
+        "completed": "Completado",
+        "in-progress": "En curso"
+      },
+      "downloadCert": "Ver Certificado",
+      "viewAll": "Ver todas las certificaciones"
+    },
     "experience":{
+        "title": "Habilidades",
         "languages": "Lenguajes",
         "technology": "Tecnologias y Herramientas"
     },
     "repos": {
+      "title": "Proyectos Destacados",
+      "subtitle": "Explora mi trabajo más reciente",
       "calculadora": {
-        "titulo": "Calculadora de Precios",
-        "repositorio": "Repositorio Web"
+        "titulo": "Calculadora de Negocio de Empanadas",
+        "description": "Calculadora de precios para negocio gastronómico con precios dinámicos",
+        "repositorio": "Ver Código",
+        "tech": ["JavaScript", "HTML", "CSS"]
       },
       "biblioteca": {
-        "titulo": "Biblioteca Saint Mary",
-        "repositorio": "Saint Mary Repositorio"
+        "titulo": "Sistema de Biblioteca Saint Mary",
+        "description": "Sistema de gestión de biblioteca digital con funcionalidad de búsqueda",
+        "repositorio": "Ver Código",
+        "tech": ["React", "Node.js", "MySQL"]
       },
       "web": {
-        "titulo": "Proyectos Web",
-        "repositorio": "Repositorio Web"
+        "titulo": "Portafolio de Desarrollo Web",
+        "description": "Colección de proyectos web responsivos y experimentos",
+        "repositorio": "Ver Código",
+        "tech": ["React", "JavaScript", "CSS3"]
       },
       "dataScience": {
-        "titulo": "Projectos Ciencia de Datos",
-        "repositorio": "Repositorio Ciencia de Datos"
+        "titulo": "Proyectos de Ciencia de Datos",
+        "description": "Proyectos de análisis y visualización de datos en Python",
+        "repositorio": "Ver Código",
+        "tech": ["Python", "Pandas", "Matplotlib"]
       },
       "promocional": {
-        "titulo": "Saint Mary Pagina Promocional",
-        "repositorio": "Saint Mary Repositorio"
+        "titulo": "Sitio Promocional Saint Mary",
+        "description": "Sitio web promocional moderno con diseño responsivo",
+        "repositorio": "Ver Código",
+        "tech": ["HTML", "CSS", "JavaScript"]
       },
       "plataform": {
-        "titulo":"Saint Mary Plataforma Frontend",
-        "repositorio":"Repositorio Saint Mary Plataforma"
-      },
-      "plataform_2": {
-        "titulo": "Saint Mary Plataforma Backend",
-        "repositorio": "Repositorio Saint Mary Plataforma"
+        "titulo": "Plataforma de Aprendizaje Saint Mary",
+        "description": "Plataforma educativa full-stack con gestión de usuarios",
+        "repositorio": "Ver Código",
+        "tech": ["React", "Node.js", "PostgreSQL"]
       }
     },
-        "formulario": {
-          "hablemos": "¡Hablemos!",
-          "nombre": "Tu Nombre",
-          "correo": "Tu Correo",
-          "mensaje": "Tu Mensaje",
-          "enviar": "Enviar",
-          "mensajeExitoso": "¡Mensaje enviado con éxito!",
-          "mensajeNoExitoso": "Error: el mensaje no fue enviado"
-        }
+    "formulario": {
+      "title": "¿Interesado en mi perfil?",
+      "subtitle": "Envíame un mensaje",
+      "hablemos": "¡Conversemos!",
+      "nombre": "Tu Nombre",
+      "nombrePlaceholder": "Ingresa tu nombre completo",
+      "correo": "Tu Correo Corporativo",
+      "correoPlaceholder": "Ingresa tu correo electrónico corporativo",
+      "mensaje": "Tu Mensaje",
+      "mensajePlaceholder": "Cuéntame sobre la oportunidad laboral o coordina una entrevista...",
+      "enviar": "Enviar Mensaje",
+      "enviando": "Enviando...",
+      "mensajeExitoso": "¡Mensaje enviado con éxito! Te responderé a la brevedad para coordinar.",
+      "mensajeNoExitoso": "¡Ups! Algo salió mal. Por favor intenta de nuevo o contáctame directamente por LinkedIn.",
+      "required": "Este campo es obligatorio",
+      "invalidEmail": "Por favor ingresa un correo electrónico válido"
+    },
+    "meta": {
+      "title": "Carolina - Portafolio Desarrolladora Full-Stack",
+      "description": "Descubre el portafolio de Carolina con proyectos en React, JavaScript y Node.js. Desarrolladora Full-Stack Junior en Buenos Aires, Argentina.",
+      "keywords": "Desarrolladora Full-Stack, React, JavaScript, Node.js, Desarrollo Web, Portafolio"
+    },
+    "accessibility": {
+      "skipToMain": "Ir al contenido principal",
+      "menuToggle": "Alternar menú de navegación",
+      "languageSwitch": "Cambiar idioma", 
+      "externalLink": "Se abre en nueva pestaña"
+    }
   }
   

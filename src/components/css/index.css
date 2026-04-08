@@ -1,0 +1,24 @@
+/* ====================================
+   📁 CSS INDEX - Orden de importación
+   ==================================== */
+
+/* 🏗️ FOUNDATION STYLES (Debe cargarse primero) */
+@import './_variables.css';  /* Variables globales */
+@import './_base.css';       /* Estilos base y utilidades */
+
+/* 🧩 COMPONENT STYLES */
+@import './Header.css';      /* Navegación */
+@import './Inicio.css';      /* Hero section */
+@import './Perfil.css';      /* Perfil/About */
+@import './Timeline.css';    /* Formación/Timeline */
+@import './Experiencia.css'; /* Habilidades/Skills */
+@import './Formulario.css';  /* Contacto/Form */
+@import './Footer.css';      /* Footer */
+
+/* ====================================
+   📝 NOTES:
+   - Variables deben importarse primero
+   - Base styles proporcionan utilidades
+   - Componentes en orden de aparición
+   - Evita múltiples @import en componentes
+   ==================================== */

@@ -20,8 +20,7 @@ export default function GithubRepos() {
         "Proyectos_Web": proyectWeb,
         "Saint-Mary": saintMary,
         "DataScience": dataScience,
-        "saint-mary-frontend": saintmaryplataform,
-        "saint-mary-backend": saintmaryplataform,
+        "saint-mary-full-stack": saintmaryplataform,
         "Santa-Maria": library
     }
     
@@ -31,8 +30,7 @@ export default function GithubRepos() {
         "Proyectos_Web": "web",
         "Santa-Maria": "biblioteca",
         "Saint-Mary": "promocional",
-        "saint-mary-backend": "plataform_2",
-        "saint-mary-frontend": "plataform",
+        "saint-mary-full-stack": "plataform",
         
     }
 
@@ -79,48 +77,73 @@ export default function GithubRepos() {
   
 
   return (
-    <div className="proyectos">
-      {repos.map((repo) => {
-        const homepageUrl = getHomepageUrl(repo)
-        const key = repoKeys[repo.name]
-        return (
-            <div className="flip-card" key={repo.id}>
-                <div className="flip-card-inner">
-                {/* Frente de la card */}
-                    <div className="flip-card-front">
-                        <div className="content">
-                            <h2>{t(`repos.${key}.titulo`)}</h2>
-                            <img
-                                src={repoImages[repo.name]}
-                                alt={repo.name}
-                                style={{ width: "100%", borderRadius: "10px" }}
-                            />
-                        </div>
-                    </div>
-                {/* Reverso de la card */}
-                    <div className="flip-card-back">
-                        <div className="content">
-                            <h2>{t(`repos.${key}.titulo`)}</h2>
-                            <a
-                            href={repo.html_url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >
-                                <FontAwesomeIcon icon={faGithub} /> {" "}
-                            {t(`repos.${key}.repositorio`)}
-                            </a>
-                        {/* Si tenés GitHub Pages, lo muestro */}
-                        {homepageUrl && (
-                            <a href={homepageUrl} target="_blank" rel="noopener noreferrer" style={{ marginLeft: 10 }}>
-                            Web
-                            </a>
-                        )}
-                    </div>
-                </div>
-            </div>
+    <section id="proyectos">
+      <div className="proyectos">
+        <div style={{ 
+          gridColumn: "1 / -1", 
+          textAlign: "center", 
+          padding: "2rem", 
+          marginBottom: "1rem"
+        }}>
+          <h1 style={{ fontSize: "2.5rem", color: "#333", marginBottom: "0.5rem" }}>
+            {t('repos.title')}
+          </h1>
+          <p style={{ fontSize: "1.2rem", color: "#555", marginBottom: "0" }}>
+            {t('repos.subtitle')}
+          </p>
         </div>
-        )
-    })}
-    </div>
+        
+        {repos.map((repo) => {
+          const homepageUrl = getHomepageUrl(repo)
+          const key = repoKeys[repo.name]
+          return (
+              <div className="flip-card" key={repo.id}>
+                  <div className="flip-card-inner">
+                  {/* Frente de la card */}
+                      <div className="flip-card-front">
+                          <div className="content">
+                              <h2>{t(`repos.${key}.titulo`)}</h2>
+                              <img
+                                  src={repoImages[repo.name]}
+                                  alt={t(`repos.${key}.description`)}
+                                  style={{ width: "100%", borderRadius: "10px" }}
+                              />
+                          </div>
+                      </div>
+                  {/* Reverso de la card */}
+                      <div className="flip-card-back">
+                          <div className="content">
+                              <h2>{t(`repos.${key}.titulo`)}</h2>
+                              <p style={{ fontSize: "14px", marginBottom: "15px", color: "#ddd" }}>
+                                {t(`repos.${key}.description`)}
+                              </p>
+                              
+                              <a
+                              href={repo.html_url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >
+                                  <FontAwesomeIcon icon={faGithub} /> {" "}
+                              {t(`repos.${key}.repositorio`)}
+                              </a>
+                          {/* Si tenés GitHub Pages, lo muestro */}
+                          {homepageUrl && (
+                              <a 
+                                href={homepageUrl} 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                style={{ marginLeft: 15, padding: "5px 10px", backgroundColor: "#007bff", color: "white", textDecoration: "none", borderRadius: "5px", fontSize: "14px" }}
+                              >
+                              Demo
+                              </a>
+                          )}
+                      </div>
+                  </div>
+              </div>
+          </div>
+          )
+      })}
+      </div>
+    </section>
   )
 }

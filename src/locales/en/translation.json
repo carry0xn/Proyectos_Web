@@ -1,6 +1,7 @@
-{   
+{
     "header": {
       "sobreMi": "About Me",
+      "formacion": "Education",
       "habilidades": "Skills",
       "proyectos": "Projects",
       "contacto": "Contact"
@@ -13,16 +14,19 @@
       "saludo4": "Everyone"
     },
     "perfil": {
-      "intro": "Welcome to my portfolio. I am Carolina, a <strong>Junior Full-Stack Web Developer</strong> with experience in <strong>React, JavaScript</strong>, and <strong>Node.js</strong>. I am currently studying <strong>Computer Science</strong> and I am a <strong>Programming Technician</strong>. I have a high level of English, acquired over several years of study, and I enjoy taking on new challenges in every project. If you are looking for someone committed, proactive, and with technical and linguistic skills, you have come to the right place!",
+      "title": "About Me",
+      "intro": "I'm a <strong>Junior Full-Stack Developer</strong> passionate about creating efficient web solutions using <strong>React, JavaScript, and Node.js</strong>. Currently pursuing a <strong>Computer Science degree</strong> and certified as a <strong>Programming Technician</strong>. With advanced English proficiency and a commitment to continuous learning, I bring both technical expertise and strong communication skills to every project.",
       "location": "Buenos Aires, Argentina",
-      "downloadCVES": "Download CV in Spanish",
-      "downloadCVEN": "Download CV in English"
+      "locationIcon": "📍",
+      "downloadCVES": "Download CV (Spanish)",
+      "downloadCVEN": "Download CV (English)",
+      "altText": "Carolina's professional profile photo"
     },
     "education": {
       "title": "Academic Background",
       "degree1": "<strong>Programming Technician</strong>, National University of Hurlingham",
       "degree2": "<strong>Computer Science</strong> (ongoing), National University of Hurlingham",
-      "degree3": "<strong>English</strong> (ongoing), Saint Mary: School of English (First Certificated Level: C1)"
+      "degree3": "<strong>English</strong> (ongoing), Churchull House: School of English Language (Level: C1)"
     },
     "courses": {
       "title": "Complementary Courses",
@@ -33,48 +37,178 @@
       "postgreSQL": "<strong>PostgreSQL</strong> – National University of Hurlingham (collaboration with CETI)",
       "downloadCert": "Download Certificate"
     },
+    "timeline": {
+      "title": "Education & Certifications",
+      "subtitle": "My academic and professional journey",
+      "items": [
+        {
+          "id": "licenciatura",
+          "type": "education",
+          "title": "Computer Science Degree",
+          "institution": "National University of Hurlingham",
+          "period": "2020 - Present",
+          "status": "in-progress",
+          "description": "Undergraduate degree focused on software development, databases, and system architecture.",
+          "icon": "🎓",
+          "certUrl": null
+        },
+        {
+          "id": "tecnica",
+          "type": "education",
+          "title": "Programming Technician",
+          "institution": "National University of Hurlingham",
+          "period": "2020 - 2024",
+          "status": "completed",
+          "description": "Technical training in programming, algorithms, and data structures.",
+          "icon": "💻",
+          "certUrl": "tecnica-cert.pdf"
+        },
+        {
+          "id": "english",
+          "type": "education",
+          "title": "English - First Certificate (B2)",
+          "institution": "Saint Mary",
+          "period": "2018 - Present",
+          "status": "in-progress",
+          "description": "Advanced English studies, currently completing First Certificate (B2) level for international certification.",
+          "icon": "🌍",
+          "certUrl": null
+        },
+        {
+          "id": "churchull",
+          "type": "course",
+          "title": "English C1 Certification",
+          "institution": "Churchull House: School of English Language",
+          "period": "March 2026",
+          "status": "completed",
+          "description": "One-month intensive course in England with C1 (Advanced) level certification.",
+          "icon": "🇬🇧",
+          "certUrl": "churchull-c1-cert.pdf"
+        },
+        {
+          "id": "postgresql",
+          "type": "course",
+          "title": "PostgreSQL",
+          "institution": "National University of Hurlingham (collaboration with CETI)",
+          "period": "October 2024",
+          "status": "completed",
+          "description": "Relational database administration, advanced queries, and optimization.",
+          "icon": "🐘",
+          "certUrl": "postgresql-cert.pdf"
+        },
+        {
+          "id": "fullstackjs",
+          "type": "course",
+          "title": "Full Stack JavaScript",
+          "institution": "Codo a Codo",
+          "period": "July 2023",
+          "status": "completed",
+          "description": "Complete web development with JavaScript, Node.js, React, and databases.",
+          "icon": "⚡",
+          "certUrl": "fullstack-js-cert.pdf"
+        },
+        {
+          "id": "datascience",
+          "type": "course",
+          "title": "Python for Data Science",
+          "institution": "National University of Hurlingham (collaboration with CETI)",
+          "period": "April 2023",
+          "status": "completed",
+          "description": "Data analysis, visualization, and machine learning with Python, Pandas, and Matplotlib.",
+          "icon": "📊",
+          "certUrl": "data-science-cert.pdf"
+        },
+        {
+          "id": "python",
+          "type": "course",
+          "title": "Introduction to Programming with Python",
+          "institution": "Talento Tech",
+          "period": "December 2022",
+          "status": "completed",
+          "description": "Programming fundamentals, Python syntax, and problem-solving.",
+          "icon": "🐍",
+          "certUrl": "python-intro-cert.pdf"
+        }
+      ],
+      "statusLabels": {
+        "completed": "Completed",
+        "in-progress": "In Progress"
+      },
+      "downloadCert": "View Certificate",
+      "viewAll": "View all certifications"
+    },
     "experience":{
+        "title": "Skills",
         "languages": "Languages",
         "technology": "Technology and Tools"
     },
     "repos": {
+      "title": "Featured Projects",
+      "subtitle": "Explore my latest work",
       "calculadora": {
-        "titulo": "Price Calculator",
-        "repositorio": "Web Repository"
+        "titulo": "Empanadas Business Calculator",
+        "description": "Price calculator for food business with dynamic pricing",
+        "repositorio": "View Code",
+        "tech": ["JavaScript", "HTML", "CSS"]
       },
       "biblioteca": {
-        "titulo": "Saint Mary Library",
-        "repositorio": "Saint Mary Repository"
+        "titulo": "Saint Mary Library System",
+        "description": "Digital library management system with search functionality",
+        "repositorio": "View Code",
+        "tech": ["React", "Node.js", "MySQL"]
       },
       "web": {
-        "titulo": "Web Projects",
-        "repositorio": "Web Repository"
+        "titulo": "Web Development Portfolio",
+        "description": "Collection of responsive web projects and experiments",
+        "repositorio": "View Code",
+        "tech": ["React", "JavaScript", "CSS3"]
       },
       "dataScience": {
         "titulo": "Data Science Projects",
-        "repositorio": "Data Science Repository"
+        "description": "Python-based data analysis and visualization projects",
+        "repositorio": "View Code",
+        "tech": ["Python", "Pandas", "Matplotlib"]
       },
       "promocional": {
-        "titulo": "Saint Mary Promotional Website",
-        "repositorio": "Saint Mary Repository"
+        "titulo": "Saint Mary Promotional Site",
+        "description": "Modern promotional website with responsive design",
+        "repositorio": "View Code",
+        "tech": ["HTML", "CSS", "JavaScript"]
       },
       "plataform": {
-        "titulo":"Saint Mary Plataform Frontend",
-        "repositorio":"Saint Mary Plataform Repository "
-      },
-      "plataform_2": {
-        "titulo": "Saint Mary Plataform Backend",
-        "repositorio": "Saint Mary Plataform Repository"
+        "titulo": "Saint Mary Learning Platform",
+        "description": "Full-stack educational platform with user management",
+        "repositorio": "View Code",
+        "tech": ["React", "Node.js", "PostgreSQL"]
       }
     },
-        "formulario": {
-          "hablemos": "Let's talk!",
-          "nombre": "Your Name",
-          "correo": "Your Email",
-          "mensaje": "Your Message",
-          "enviar": "Send",
-          "mensajeExitoso": "Message sent successfully!",
-          "mensajeNoExitoso": "Error: the message was not sent"
-        }
+    "formulario": {
+      "title": "Interested in my profile?",
+      "subtitle": "Send me a message",
+      "hablemos": "Let's connect!",
+      "nombre": "Your Name",
+      "nombrePlaceholder": "Enter your full name",
+      "correo": "Your Corporate Email",
+      "correoPlaceholder": "Enter your corporate email address",
+      "mensaje": "Your Message",
+      "mensajePlaceholder": "Tell me about the job opportunity or schedule an interview...",
+      "enviar": "Send Message",
+      "enviando": "Sending...",
+      "mensajeExitoso": "Message sent successfully! I'll get back to you shortly to coordinate.",
+      "mensajeNoExitoso": "Oops! Something went wrong. Please try again or contact me directly via LinkedIn.",
+      "required": "This field is required",
+      "invalidEmail": "Please enter a valid email address"
+    },
+    "meta": {
+      "title": "Carolina - Full-Stack Developer Portfolio",
+      "description": "Discover Carolina's portfolio featuring React, JavaScript, and Node.js projects. Junior Full-Stack Developer based in Buenos Aires, Argentina.",
+      "keywords": "Full-Stack Developer, React, JavaScript, Node.js, Web Development, Portfolio"
+    },
+    "accessibility": {
+      "skipToMain": "Skip to main content",
+      "menuToggle": "Toggle navigation menu",
+      "languageSwitch": "Switch language",
+      "externalLink": "Opens in new tab"
+    }
   }
   

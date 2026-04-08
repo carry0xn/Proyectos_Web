@@ -1,0 +1,510 @@
+/* ====================================
+   📅 TIMELINE COMPONENT
+   ================================= */
+
+/* 📋 TIMELINE SECTION */
+.timeline-section {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--color-background-light);
+  font-family: var(--font-family-primary);
+}
+
+.timeline-header {
+  text-align: center;
+  margin-bottom: var(--spacing-xxl);
+}
+
+.timeline-header h2 {
+  color: var(--color-gray-dark);
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-md);
+  letter-spacing: 1px;
+}
+
+.timeline-subtitle {
+  color: var(--color-gray-medium);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-normal);
+}
+
+/* 📏 TIMELINE CONTAINER */
+.timeline {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: var(--spacing-md) 0;
+}
+
+/* 📐 VERTICAL LINE */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: var(--color-primary);
+  border-radius: var(--border-radius-sm);
+}
+
+/* 📌 TIMELINE ITEMS */
+.timeline-item {
+  position: relative;
+  margin-bottom: var(--spacing-xl);
+  padding-left: 5rem;
+  opacity: 0;
+  animation: slideInUp 0.6s ease-out forwards;
+}
+
+.timeline-item:nth-child(1) { animation-delay: 0.1s; }
+.timeline-item:nth-child(2) { animation-delay: 0.2s; }
+.timeline-item:nth-child(3) { animation-delay: 0.3s; }
+.timeline-item:nth-child(4) { animation-delay: 0.4s; }
+.timeline-item:nth-child(5) { animation-delay: 0.5s; }
+.timeline-item:nth-child(6) { animation-delay: 0.6s; }
+.timeline-item:nth-child(7) { animation-delay: 0.7s; }
+.timeline-item:nth-child(8) { animation-delay: 0.8s; }
+
+/* 🎯 TIMELINE MARKERS */
+.timeline-marker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: var(--border-radius-full);
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+  border: 4px solid var(--color-white);
+  z-index: 2;
+  transition: all var(--transition-normal);
+}
+
+.timeline-item:hover .timeline-marker {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-lg);
+}
+
+/* 🎨 MARKER COLORS BY TYPE */
+.timeline-item.education .timeline-marker {
+  background-color: var(--color-primary-dark);
+}
+
+.timeline-item.course .timeline-marker {
+  background-color: var(--color-primary);
+}
+
+.timeline-icon {
+  font-size: var(--font-size-xl);
+  filter: brightness(0) invert(1);
+}
+
+/* 📄 TIMELINE CONTENT */
+.timeline-content {
+  background-color: var(--color-white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+}
+
+.timeline-item:hover .timeline-content {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+/* 📋 CONTENT HEADER */
+.timeline-header-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-md);
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.timeline-title {
+  color: var(--color-gray-dark);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin: 0;
+  flex: 1;
+  min-width: 200px;
+}
+
+/* 🏷️ STATUS BADGES */
+.status-badge {
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--spacing-lg);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-badge.completed {
+  background-color: var(--color-success);
+  color: var(--color-white);
+}
+
+.status-badge.in-progress {
+  background-color: var(--color-warning);
+  color: var(--color-white);
+}
+
+/* 📍 INSTITUTION & PERIOD */
+.timeline-institution {
+  color: var(--color-gray-medium);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  margin: 0 0 var(--spacing-sm) 0;
+  border-bottom: 2px solid var(--color-gray-border);
+  padding-bottom: var(--spacing-sm);
+}
+
+.timeline-period {
+  color: var(--color-gray-light);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  background-color: var(--color-gray-bg);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  display: inline-block;
+  margin-bottom: var(--spacing-md);
+}
+
+/* 📝 DESCRIPTION */
+.timeline-description {
+  color: var(--color-gray-medium);
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+  margin: var(--spacing-md) 0;
+}
+
+/* 🔗 CERTIFICATE BUTTON */
+.cert-button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+  font-family: var(--font-family-primary);
+}
+
+.cert-button:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+}
+
+.cert-button:active {
+  transform: translateY(0);
+}
+
+/* 🎬 ANIMATIONS */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .timeline-section {
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .timeline-header h2 {
+    font-size: var(--font-size-3xl);
+  }
+  
+  .timeline::before {
+    left: 20px;
+  }
+  
+  .timeline-item {
+    padding-left: var(--spacing-xxxl);
+  }
+  
+  .timeline-marker {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .timeline-icon {
+    font-size: var(--font-size-lg);
+  }
+  
+  .timeline-content {
+    padding: var(--spacing-lg);
+  }
+  
+  .timeline-title {
+    font-size: var(--font-size-lg);
+    min-width: auto;
+  }
+  
+  .timeline-header-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-header h2 {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .timeline-content {
+    padding: var(--spacing-md);
+  }
+  
+  .timeline-title {
+    font-size: var(--font-size-base);
+  }
+  
+  .cert-button {
+    font-size: var(--font-size-sm);
+    padding: var(--spacing-xs) var(--spacing-md);
+  }
+}
+
+.timeline-subtitle {
+  color: #555;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.timeline {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+/* Línea vertical principal */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #b347e6;
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 5rem;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #b347e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 4px solid white;
+  z-index: 2;
+}
+
+.timeline-icon {
+  font-size: 1.5rem;
+  filter: brightness(0) invert(1);
+}
+
+/* Contenido del timeline - tarjetas blancas como el resto de la página */
+.timeline-content {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Diferentes colores por tipo */
+.timeline-item.education .timeline-marker {
+  background-color: #572697;
+}
+
+.timeline-item.course .timeline-marker {
+  background-color: #b347e6;
+}
+
+.timeline-header-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.timeline-title {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  flex: 1;
+  min-width: 200px;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-badge.completed {
+  background-color: #27ae60;
+  color: white;
+}
+
+.status-badge.in-progress {
+  background-color: #f39c12;
+  color: white;
+}
+
+.timeline-institution {
+  color: #555;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.timeline-period {
+  color: #777;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: #f8f9fa;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.timeline-description {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+.cert-button {
+  background-color: #b347e6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1rem;
+  font-family: 'Merriweather', serif;
+}
+
+.cert-button:hover {
+  background-color: #572697;
+  transform: translateY(-2px);
+}
+
+.cert-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timeline-section {
+    padding: 1.5rem;
+  }
+  
+  .timeline-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .timeline::before {
+    left: 20px;
+  }
+  
+  .timeline-item {
+    padding-left: 4rem;
+  }
+  
+  .timeline-marker {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .timeline-icon {
+    font-size: 1.2rem;
+  }
+  
+  .timeline-content {
+    padding: 1.5rem;
+  }
+  
+  .timeline-title {
+    font-size: 1.1rem;
+    min-width: auto;
+  }
+  
+  .timeline-header-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .status-badge {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  .timeline-content {
+    padding: 1rem;
+  }
+  
+  .timeline-title {
+    font-size: 1rem;
+  }
+  
+  .cert-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

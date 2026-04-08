@@ -1,12 +1,12 @@
 import React from 'react'
 import Perfil from './components/Perfil'
-import Experiencia from './components/Experiencia'
+import Timeline from './components/Timeline'
+import Habilidades from './components/Habilidades'
 import Inicio from './components/Inicio'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import GithubRepos from './components/GithubRepos'
 import Formulario from './components/Formulario'
-
 
 function App() {
   return (
@@ -14,7 +14,8 @@ function App() {
       <Header />
       <Inicio />
       <Perfil />
-      <Experiencia />
+      <Timeline />
+      <Habilidades />
       <GithubRepos />
       <Formulario /> 
       <Footer />

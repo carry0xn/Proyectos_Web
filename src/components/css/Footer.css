@@ -1,0 +1,100 @@
+/* ====================================
+   🦶 FOOTER COMPONENT
+   ================================= */
+
+footer {
+  background-color: var(--color-primary-dark);
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* 📱 CONTACT INFO LIST */
+footer .contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-xxl);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .contact-info li {
+  display: flex;
+}
+
+footer .contact-info a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius-full);
+  transition: all var(--transition-normal);
+  color: var(--color-white);
+  font-size: var(--font-size-xl);
+  text-decoration: none;
+}
+
+footer .contact-info a:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary-dark);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+footer .contact-info a:active {
+  transform: translateY(-2px);
+}
+
+/* 🎨 ICON SPECIFIC COLORS ON HOVER */
+footer .contact-info a[href*="mailto"]:hover {
+  color: #ea4335;
+}
+
+footer .contact-info a[href*="linkedin"]:hover {
+  color: #0077b5;
+}
+
+footer .contact-info a[href*="github"]:hover {
+  color: #333333;
+}
+
+footer .contact-info a[href*="wa.me"]:hover {
+  color: #25d366;
+}
+
+/* 📱 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  footer {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  footer .contact-info {
+    gap: var(--spacing-lg);
+  }
+
+  footer .contact-info a {
+    width: 50px;
+    height: 50px;
+    font-size: var(--font-size-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+
+  footer .contact-info {
+    gap: var(--spacing-md);
+  }
+
+  footer .contact-info a {
+    width: 45px;
+    height: 45px;
+    font-size: var(--font-size-base);
+  }
+}
