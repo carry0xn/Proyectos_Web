@@ -17,7 +17,6 @@
       "title": "Sobre Mí",
       "intro": "Soy una <strong>Desarrolladora Full-Stack Junior</strong> apasionada por crear soluciones web eficientes usando <strong>React, JavaScript y Node.js</strong>. Actualmente estudio <strong>Licenciatura en Informática</strong> y soy <strong>Técnica Universitaria en Programación</strong>. Con dominio avanzado del inglés y compromiso con el aprendizaje continuo, aporto experiencia técnica y habilidades comunicativas sólidas a cada proyecto.",
       "location": "Buenos Aires, Argentina",
-      "locationIcon": "📍",
       "downloadCVES": "Descargar CV (Español)",
       "downloadCVEN": "Descargar CV (Inglés)",
       "altText": "Foto profesional de Carolina"
@@ -49,7 +48,7 @@
           "period": "2020 - Presente",
           "status": "in-progress",
           "description": "Carrera de grado enfocada en desarrollo de software, bases de datos y arquitectura de sistemas.",
-          "icon": "🎓",
+          "icon": "graduation-cap",
           "certUrl": null
         },
         {
@@ -60,7 +59,7 @@
           "period": "2020 - 2024",
           "status": "completed",
           "description": "Formación técnica en programación, algoritmos y estructuras de datos.",
-          "icon": "💻",
+          "icon": "laptop-code",
           "certUrl": "tecnica-cert.pdf"
         },
         {
@@ -71,10 +70,20 @@
           "period": "2018 - Presente",
           "status": "in-progress",
           "description": "Estudios de inglés avanzado, actualmente cursando el nivel First (B2) para certificación internacional.",
-          "icon": "🌍",
+          "icon": "language",
           "certUrl": null
         },
         {
+          "id": "talento-tech-web-dev",
+          "type": "course",
+          "title": "Desarrollo de Interfaces Web",
+          "institution": "Talento Tech",
+          "period": "Abril 2026",
+          "status": "completed",
+          "description": "Trayecto formativo integral que incluye tres cursos progresivos: Iniciación a la Programación con Python, Front-End JS y React JS. Microcredencial 'Front End Developer' que valida competencias en desarrollo de interfaces modernas, dinámicas y conectadas a APIs externas.",
+          "icon": "react",
+          "certUrl": "talento-tech-web-dev-cert.pdf"
+        },{
           "id": "churchull",
           "type": "course",
           "title": "Certificación de Inglés C1",
@@ -82,7 +91,7 @@
           "period": "Marzo 2026",
           "status": "completed",
           "description": "Curso intensivo de un mes en Inglaterra con certificación de nivel C1 (Avanzado).",
-          "icon": "🇬🇧",
+          "icon": "globe",
           "certUrl": "churchull-c1-cert.pdf"
         },
         {
@@ -93,7 +102,7 @@
           "period": "Octubre 2024",
           "status": "completed",
           "description": "Administración de bases de datos relacionales, consultas avanzadas y optimización.",
-          "icon": "🐘",
+          "icon": "database",
           "certUrl": "postgresql-cert.pdf"
         },
         {
@@ -104,7 +113,7 @@
           "period": "Julio 2023",
           "status": "completed",
           "description": "Desarrollo web completo con JavaScript, Node.js, React y bases de datos.",
-          "icon": "⚡",
+          "icon": "code",
           "certUrl": "fullstack-js-cert.pdf"
         },
         {
@@ -115,7 +124,7 @@
           "period": "Abril 2023",
           "status": "completed",
           "description": "Análisis de datos, visualización y machine learning con Python, Pandas y Matplotlib.",
-          "icon": "📊",
+          "icon": "chart-line",
           "certUrl": "data-science-cert.pdf"
         },
         {
@@ -126,7 +135,7 @@
           "period": "Diciembre 2022",
           "status": "completed",
           "description": "Fundamentos de programación, sintaxis de Python y resolución de problemas.",
-          "icon": "🐍",
+          "icon": "python",
           "certUrl": "python-intro-cert.pdf"
         }
       ],

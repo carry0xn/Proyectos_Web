@@ -23,7 +23,7 @@ const Perfil = () => {
       <div className="container">
         <div className="profile-content">
           <div className="profile-photo">
-            <img src={profile} alt="yo" />
+            <img src={profile} alt={t('perfil.altText')} />
           </div>
           <div className="profile-details">
             <p className="intro-text" dangerouslySetInnerHTML={{ __html: t('perfil.intro') }}></p>
@@ -43,17 +43,17 @@ const Perfil = () => {
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/carolina-rodriguez-medina-676353225/">
+                <a href="https://www.linkedin.com/in/carolina-rodriguez-medina-676353225/" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
               </li>
               <li>
-                <a href="https://github.com/carry0xn">
+                <a href="https://github.com/carry0xn" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/541169512534?text=Hola%20Como%20Estas?">
+                <a href="https://wa.me/541169512534?text=Hola%20Como%20Estas?" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faWhatsapp} />
                 </a>
               </li>

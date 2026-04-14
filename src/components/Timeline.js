@@ -1,11 +1,35 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { 
+  faGraduationCap, 
+  faLaptopCode, 
+  faLanguage, 
+  faGlobe, 
+  faDatabase, 
+  faCode, 
+  faChartLine
+} from '@fortawesome/free-solid-svg-icons'
+import { faReact, faPython } from '@fortawesome/free-brands-svg-icons'
 import './css/Timeline.css'
 
 const Timeline = () => {
   const { t } = useTranslation()
   const timelineItems = t('timeline.items', { returnObjects: true });
   const statusLabels = t('timeline.statusLabels', { returnObjects: true })
+
+  // Mapeo de iconos
+  const iconMap = {
+    'graduation-cap': faGraduationCap,
+    'laptop-code': faLaptopCode,
+    'language': faLanguage,
+    'globe': faGlobe,
+    'react': faReact,
+    'database': faDatabase,
+    'code': faCode,
+    'chart-line': faChartLine,
+    'python': faPython
+  }
 
   const handleCertificateClick = (certUrl) => {
     if (certUrl) {
@@ -35,7 +59,10 @@ const Timeline = () => {
               className={`timeline-item ${item.type} ${item.status}`}
             >
               <div className="timeline-marker">
-                <span className="timeline-icon">{item.icon}</span>
+                <FontAwesomeIcon 
+                  icon={iconMap[item.icon]} 
+                  className="timeline-icon" 
+                />
               </div>
               
               <div className="timeline-content">

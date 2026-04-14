@@ -17,7 +17,6 @@
       "title": "About Me",
       "intro": "I'm a <strong>Junior Full-Stack Developer</strong> passionate about creating efficient web solutions using <strong>React, JavaScript, and Node.js</strong>. Currently pursuing a <strong>Computer Science degree</strong> and certified as a <strong>Programming Technician</strong>. With advanced English proficiency and a commitment to continuous learning, I bring both technical expertise and strong communication skills to every project.",
       "location": "Buenos Aires, Argentina",
-      "locationIcon": "📍",
       "downloadCVES": "Download CV (Spanish)",
       "downloadCVEN": "Download CV (English)",
       "altText": "Carolina's professional profile photo"
@@ -49,7 +48,7 @@
           "period": "2020 - Present",
           "status": "in-progress",
           "description": "Undergraduate degree focused on software development, databases, and system architecture.",
-          "icon": "🎓",
+          "icon": "graduation-cap",
           "certUrl": null
         },
         {
@@ -60,7 +59,7 @@
           "period": "2020 - 2024",
           "status": "completed",
           "description": "Technical training in programming, algorithms, and data structures.",
-          "icon": "💻",
+          "icon": "laptop-code",
           "certUrl": "tecnica-cert.pdf"
         },
         {
@@ -71,10 +70,20 @@
           "period": "2018 - Present",
           "status": "in-progress",
           "description": "Advanced English studies, currently completing First Certificate (B2) level for international certification.",
-          "icon": "🌍",
+          "icon": "language",
           "certUrl": null
         },
         {
+          "id": "talento-tech-web-dev",
+          "type": "course",
+          "title": "Web Interface Development",
+          "institution": "Talento Tech",
+          "period": "April 2026",
+          "status": "completed",
+          "description": "Comprehensive training pathway including three progressive courses: Introduction to Programming with Python, Front-End JS, and React JS. 'Front End Developer' microcredential validating skills in modern, dynamic interfaces connected to external APIs.",
+          "icon": "react",
+          "certUrl": "talento-tech-web-dev-cert.pdf"
+        },{
           "id": "churchull",
           "type": "course",
           "title": "English C1 Certification",
@@ -82,7 +91,7 @@
           "period": "March 2026",
           "status": "completed",
           "description": "One-month intensive course in England with C1 (Advanced) level certification.",
-          "icon": "🇬🇧",
+          "icon": "globe",
           "certUrl": "churchull-c1-cert.pdf"
         },
         {
@@ -93,7 +102,7 @@
           "period": "October 2024",
           "status": "completed",
           "description": "Relational database administration, advanced queries, and optimization.",
-          "icon": "🐘",
+          "icon": "database",
           "certUrl": "postgresql-cert.pdf"
         },
         {
@@ -104,7 +113,7 @@
           "period": "July 2023",
           "status": "completed",
           "description": "Complete web development with JavaScript, Node.js, React, and databases.",
-          "icon": "⚡",
+          "icon": "code",
           "certUrl": "fullstack-js-cert.pdf"
         },
         {
@@ -115,7 +124,7 @@
           "period": "April 2023",
           "status": "completed",
           "description": "Data analysis, visualization, and machine learning with Python, Pandas, and Matplotlib.",
-          "icon": "📊",
+          "icon": "chart-line",
           "certUrl": "data-science-cert.pdf"
         },
         {
@@ -126,7 +135,7 @@
           "period": "December 2022",
           "status": "completed",
           "description": "Programming fundamentals, Python syntax, and problem-solving.",
-          "icon": "🐍",
+          "icon": "python",
           "certUrl": "python-intro-cert.pdf"
         }
       ],

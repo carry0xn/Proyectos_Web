@@ -1,5 +1,5 @@
 /* ====================================
-   👤 PROFILE COMPONENT
+   👤 PROFILE COMPONENT - CLEAN VERSION
    ================================= */
 
 /* 📋 PROFILE SECTION */
@@ -48,7 +48,6 @@
 /* 📝 PROFILE DETAILS */
 .profile-details {
   flex: 1;
-  min-width: 300px;
 }
 
 /* 💬 INTRO TEXT */
@@ -65,35 +64,14 @@
   display: flex;
   align-items: center;
   gap: var(--spacing-sm);
-  margin: var(--spacing-lg) 0;
-  padding: var(--spacing-md);
-  background-color: var(--color-white);
-  border-radius: var(--border-radius-md);
-  box-shadow: var(--shadow-sm);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-base);
   color: var(--color-gray-medium);
-  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--spacing-xl);
   justify-content: center;
 }
 
 .location svg {
   color: var(--color-primary);
-}
-
-/* 🔗 DOWNLOAD BUTTONS */
-.profile-details a {
-  display: inline-block;
-  margin: var(--spacing-sm) var(--spacing-sm) var(--spacing-sm) 0;
-}
-
-/* 🎯 SECTION TITLE */
-#perfil h2 {
-  font-size: var(--font-size-4xl);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-gray-dark);
-  text-align: center;
-  margin-bottom: var(--spacing-xl);
-  letter-spacing: 1px;
 }
 
 /* 🎲 BUTTONS */
@@ -112,16 +90,13 @@
   align-items: center;
   gap: var(--spacing-sm);
   text-decoration: none;
+  margin: 0 var(--spacing-sm) var(--spacing-lg) var(--spacing-sm);
 }
 
 .purple-button:hover {
   background-color: var(--color-primary-dark);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
-}
-
-.purple-button:active {
-  transform: translateY(0);
 }
 
 /* 📱 CONTACT INFO */
@@ -150,6 +125,7 @@
   transition: all var(--transition-normal);
   color: var(--color-primary);
   font-size: var(--font-size-lg);
+  text-decoration: none;
 }
 
 .contact-info a:hover {
@@ -159,7 +135,7 @@
   box-shadow: var(--shadow-md);
 }
 
-/* � RESPONSIVE DESIGN */
+/* 📱 RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   #perfil {
     padding: var(--spacing-xl) var(--spacing-md);
@@ -182,10 +158,6 @@
 
   .intro-text {
     font-size: var(--font-size-lg);
-  }
-
-  #perfil h2 {
-    font-size: var(--font-size-3xl);
   }
 
   .contact-info {
@@ -211,10 +183,6 @@
 
   .intro-text {
     font-size: var(--font-size-base);
-  }
-
-  #perfil h2 {
-    font-size: var(--font-size-2xl);
   }
 
   .purple-button {
