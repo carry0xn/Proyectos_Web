@@ -10,6 +10,7 @@ import saintMary from './img/Saint-Mary.png'
 import proyectWeb from './img/desarrollo-web-completo-con-html5-css3-js-php-y-mysql.png'
 import dataScience from './img/dataScience.png'
 import saintmaryplataform from './img/Captura de pantalla (154).png'
+import aibeautyassistant from './img/ai-beauty-assistant.png'
 
 export default function GithubRepos() {  
     const [repos, setRepos] = useState([])
@@ -21,7 +22,8 @@ export default function GithubRepos() {
         "Saint-Mary": saintMary,
         "DataScience": dataScience,
         "saint-mary-full-stack": saintmaryplataform,
-        "Santa-Maria": library
+        "Santa-Maria": library,
+        "ai-beauty-assistant": aibeautyassistant
     }
     
     const repoKeys = {
@@ -31,11 +33,11 @@ export default function GithubRepos() {
         "Santa-Maria": "biblioteca",
         "Saint-Mary": "promocional",
         "saint-mary-full-stack": "plataform",
-        
+        "ai-beauty-assistant": "aiBeautyAssistant"
     }
 
   useEffect(() => {
-    fetch(`https://api.github.com/users/${username}/repos`)
+    fetch(`https://api.github.com/users/${username}/repos?per_page=100&sort=updated`)
       .then((res) => res.json())
       .then((data) => {
       const filtered = data.filter((repo) => 
@@ -95,17 +97,27 @@ export default function GithubRepos() {
         
         {repos.map((repo) => {
           const homepageUrl = getHomepageUrl(repo)
-          const key = repoKeys[repo.name]
+          const repoKeyName = Object.keys(repoKeys).find(
+            (name) => name.toLowerCase() === repo.name.toLowerCase()
+          )
+          const key = repoKeyName ? repoKeys[repoKeyName] : null
+          const title = key ? t(`repos.${key}.titulo`) : repo.name
+          const description = key
+            ? t(`repos.${key}.description`)
+            : (repo.description || "")
+          const repositoryLabel = key
+            ? t(`repos.${key}.repositorio`)
+            : "Ver Código"
           return (
               <div className="flip-card" key={repo.id}>
                   <div className="flip-card-inner">
                   {/* Frente de la card */}
                       <div className="flip-card-front">
                           <div className="content">
-                              <h2>{t(`repos.${key}.titulo`)}</h2>
+                                <h2>{title}</h2>
                               <img
-                                  src={repoImages[repo.name]}
-                                  alt={t(`repos.${key}.description`)}
+                                  src={repoImages[repoKeyName]}
+                                  alt={description}
                                   style={{ width: "100%", borderRadius: "10px" }}
                               />
                           </div>
@@ -113,9 +125,9 @@ export default function GithubRepos() {
                   {/* Reverso de la card */}
                       <div className="flip-card-back">
                           <div className="content">
-                              <h2>{t(`repos.${key}.titulo`)}</h2>
+                              <h2>{title}</h2>
                               <p style={{ fontSize: "14px", marginBottom: "15px", color: "#ddd" }}>
-                                {t(`repos.${key}.description`)}
+                                {description}
                               </p>
                               
                               <a
@@ -124,7 +136,7 @@ export default function GithubRepos() {
                               rel="noopener noreferrer"
                               >
                                   <FontAwesomeIcon icon={faGithub} /> {" "}
-                              {t(`repos.${key}.repositorio`)}
+                              {repositoryLabel}
                               </a>
                           {/* Si tenés GitHub Pages, lo muestro */}
                           {homepageUrl && (

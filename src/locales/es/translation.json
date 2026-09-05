@@ -65,16 +65,16 @@
         {
           "id": "english",
           "type": "education",
-          "title": "Inglés - First (B2)",
+          "title": "Inglés - First (C1)",
           "institution": "Saint Mary",
           "period": "2018 - Presente",
           "status": "in-progress",
-          "description": "Estudios de inglés avanzado, actualmente cursando el nivel First (B2) para certificación internacional.",
+          "description": "Estudios de inglés avanzado, actualmente cursando el nivel First (C1) para certificación internacional.",
           "icon": "language",
           "certUrl": null
         },
         {
-          "id": "talento-tech-web-dev",
+          "id": "web-dev",
           "type": "course",
           "title": "Desarrollo de Interfaces Web",
           "institution": "Talento Tech",
@@ -82,7 +82,7 @@
           "status": "completed",
           "description": "Trayecto formativo integral que incluye tres cursos progresivos: Iniciación a la Programación con Python, Front-End JS y React JS. Microcredencial 'Front End Developer' que valida competencias en desarrollo de interfaces modernas, dinámicas y conectadas a APIs externas.",
           "icon": "react",
-          "certUrl": "talento-tech-web-dev-cert.pdf"
+          "certUrl": "web-dev-cert.pdf"
         },{
           "id": "churchull",
           "type": "course",
@@ -189,6 +189,12 @@
         "description": "Plataforma educativa full-stack con gestión de usuarios",
         "repositorio": "Ver Código",
         "tech": ["React", "Node.js", "PostgreSQL"]
+      },
+      "aiBeautyAssistant": {
+        "titulo": "AI Beauty Assistant",
+        "description": "Asistente de belleza basado en inteligencia artificial",
+        "repositorio": "Ver Código",
+        "tech": ["JavaScript", "React", "IA"]
       }
     },
     "formulario": {
