@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/Proyectos_Web/static/css/main.40b9f112.css",
-    "main.js": "/Proyectos_Web/static/js/main.b23f5e29.js",
-    "static/js/453.1fa62f00.chunk.js": "/Proyectos_Web/static/js/453.1fa62f00.chunk.js",
+    "main.js": "/Proyectos_Web/static/js/main.fb6677a1.js",
+    "static/js/453.8c2d4bc5.chunk.js": "/Proyectos_Web/static/js/453.8c2d4bc5.chunk.js",
     "static/media/profile.png": "/Proyectos_Web/static/media/profile.b53cbe0aedcc90b83541.png",
+    "static/media/ai-beauty-assistant.png": "/Proyectos_Web/static/media/ai-beauty-assistant.10dea5a32c2162c90a80.png",
     "static/media/saint_mary.png": "/Proyectos_Web/static/media/saint_mary.1606c1ce1c2442c74d2e.png",
     "static/media/Captura de pantalla (154).png": "/Proyectos_Web/static/media/Captura de pantalla (154).7d56917fcebb1986a09c.png",
     "static/media/Saint-Mary.png": "/Proyectos_Web/static/media/Saint-Mary.42e8a9894a07516b1323.png",
@@ -18,11 +19,11 @@
     "index.html": "/Proyectos_Web/index.html",
     "static/media/Flag_of_the_United_Kingdom.svg": "/Proyectos_Web/static/media/Flag_of_the_United_Kingdom.5aa2f382eb186965d0d01427f2b1c608.svg",
     "main.40b9f112.css.map": "/Proyectos_Web/static/css/main.40b9f112.css.map",
-    "main.b23f5e29.js.map": "/Proyectos_Web/static/js/main.b23f5e29.js.map",
-    "453.1fa62f00.chunk.js.map": "/Proyectos_Web/static/js/453.1fa62f00.chunk.js.map"
+    "main.fb6677a1.js.map": "/Proyectos_Web/static/js/main.fb6677a1.js.map",
+    "453.8c2d4bc5.chunk.js.map": "/Proyectos_Web/static/js/453.8c2d4bc5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.40b9f112.css",
-    "static/js/main.b23f5e29.js"
+    "static/js/main.fb6677a1.js"
   ]
 }
